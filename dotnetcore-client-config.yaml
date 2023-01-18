@@ -1,0 +1,12 @@
+generatorName: csharp-netcore
+inputSpec: openapi.json
+gitHost: github.com
+gitUserId: immutable
+gitRepoId: imx-core-sdk-dotnetcore
+enablePostProcessFile: true
+additionalProperties:
+  packageName: api
+  packageVersion: 0.1.0   # Todo: Auto generate this version string from the release git tags.
+  netCoreProjectFile: true
+  Default: true
+  targetFramework: netcoreapp3.1  
