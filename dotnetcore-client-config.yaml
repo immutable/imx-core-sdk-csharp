@@ -9,4 +9,4 @@ additionalProperties:
   packageVersion: 0.1.0   # Todo: Auto generate this version string from the release git tags.
   netCoreProjectFile: true
   Default: true
-  targetFramework: netcoreapp3.1  
+  targetFramework: netstandard2.1

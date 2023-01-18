@@ -403,6 +403,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.HeaderParameters.Add("IMX-Signature", api.Client.ClientUtils.ParameterToString(iMXSignature)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("IMX-Timestamp", api.Client.ClientUtils.ParameterToString(iMXTimestamp)); // header parameter
             localVarRequestOptions.Data = createProjectRequest;
@@ -584,6 +586,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.PathParameters.Add("id", api.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.HeaderParameters.Add("IMX-Signature", api.Client.ClientUtils.ParameterToString(iMXSignature)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("IMX-Timestamp", api.Client.ClientUtils.ParameterToString(iMXTimestamp)); // header parameter
@@ -763,6 +767,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             if (pageSize != null)
             {
