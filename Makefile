@@ -29,6 +29,7 @@ generate-api:
 	docker run --rm -v $(shell pwd):/app openapitools/openapi-generator-cli generate \
 		-i ./app/openapi.json \
 		-c ./app/dotnetcore-client-config.yaml \
+		-t ./app/generator-templates/templates \
 		-o /app/$(GENERATED_CODE_DIR)
 	rm -rf $(GENERATED_CODE_DIR)/src/api.Test $(GENERATED_CODE_DIR)/git_push.sh
 	

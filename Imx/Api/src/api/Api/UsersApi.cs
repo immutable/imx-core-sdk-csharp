@@ -399,6 +399,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.Data = getSignableRegistrationRequest;
 
             localVarRequestOptions.Operation = "UsersApi.GetSignableRegistration";
@@ -545,6 +547,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.Data = getSignableRegistrationRequest;
 
             localVarRequestOptions.Operation = "UsersApi.GetSignableRegistrationOffchain";
@@ -690,6 +694,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.PathParameters.Add("user", api.Client.ClientUtils.ParameterToString(user)); // path parameter
 
             localVarRequestOptions.Operation = "UsersApi.GetUsers";
@@ -834,6 +840,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             localVarRequestOptions.Data = registerUserRequest;
 

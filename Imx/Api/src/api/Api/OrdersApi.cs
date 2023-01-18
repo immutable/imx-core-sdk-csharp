@@ -663,6 +663,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.PathParameters.Add("id", api.Client.ClientUtils.ParameterToString(id)); // path parameter
             localVarRequestOptions.HeaderParameters.Add("x-imx-eth-address", api.Client.ClientUtils.ParameterToString(xImxEthAddress)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-imx-eth-signature", api.Client.ClientUtils.ParameterToString(xImxEthSignature)); // header parameter
@@ -855,6 +857,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.HeaderParameters.Add("x-imx-eth-address", api.Client.ClientUtils.ParameterToString(xImxEthAddress)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-imx-eth-signature", api.Client.ClientUtils.ParameterToString(xImxEthSignature)); // header parameter
             localVarRequestOptions.Data = createOrderRequest;
@@ -1025,6 +1029,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             localVarRequestOptions.PathParameters.Add("id", api.Client.ClientUtils.ParameterToString(id)); // path parameter
             if (includeFees != null)
@@ -1201,6 +1207,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.Data = getSignableCancelOrderRequest;
 
             localVarRequestOptions.Operation = "OrdersApi.GetSignableCancelOrder";
@@ -1346,6 +1354,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             localVarRequestOptions.Data = getSignableOrderRequestV3;
 
@@ -1541,6 +1551,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             if (pageSize != null)
             {

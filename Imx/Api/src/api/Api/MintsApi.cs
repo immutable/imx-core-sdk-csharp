@@ -462,6 +462,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.PathParameters.Add("id", api.Client.ClientUtils.ParameterToString(id)); // path parameter
 
             localVarRequestOptions.Operation = "MintsApi.GetMint";
@@ -613,6 +615,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             localVarRequestOptions.PathParameters.Add("token_address", api.Client.ClientUtils.ParameterToString(tokenAddress)); // path parameter
             localVarRequestOptions.PathParameters.Add("token_id", api.Client.ClientUtils.ParameterToString(tokenId)); // path parameter
@@ -791,6 +795,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             if (pageSize != null)
             {
@@ -1086,6 +1092,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             localVarRequestOptions.Data = mintTokensRequestV2;
 
