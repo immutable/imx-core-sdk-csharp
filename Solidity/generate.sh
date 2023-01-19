@@ -5,7 +5,7 @@
 # Referenced https://goethereumbook.org/smart-contract-compile/
 
 # Outpiut directory for the generated contracts go files.
-OUT_DIR="../Imx/Contracts"
+OUT_DIR="../Src/IMX/SDK/Contracts/"
 
 ABI_TEMP_DIR="Generated/Abi"
 BIN_TEMP_DIR="Generated/Abi"
@@ -19,7 +19,7 @@ solc --bin Registration.sol IERC20.sol IERC721.sol -o $BIN_TEMP_DIR --overwrite
 # See https://docs.nethereum.com/en/latest/nethereum-codegen-console/#from-abi
 rm -rf $OUT_DIR
 mkdir -p $OUT_DIR
-Nethereum.Generator.Console generate from-abi -abi $ABI_TEMP_DIR/Registration.abi  -ns Contracts -o ../Imx/Contracts/
-Nethereum.Generator.Console generate from-abi -abi $ABI_TEMP_DIR/Core.abi  -ns Contracts -o ../Imx/Contracts/
-Nethereum.Generator.Console generate from-abi -abi $ABI_TEMP_DIR/IERC20.abi  -ns Contracts -o ../Imx/Contracts/
-Nethereum.Generator.Console generate from-abi -abi $ABI_TEMP_DIR/IERC721.abi  -ns Contracts -o ../Imx/Contracts/
+Nethereum.Generator.Console generate from-abi -abi $ABI_TEMP_DIR/Registration.abi  -ns Contracts -o $OUT_DIR
+Nethereum.Generator.Console generate from-abi -abi $ABI_TEMP_DIR/Core.abi  -ns Contracts -o $OUT_DIR
+Nethereum.Generator.Console generate from-abi -abi $ABI_TEMP_DIR/IERC20.abi  -ns Contracts -o $OUT_DIR
+Nethereum.Generator.Console generate from-abi -abi $ABI_TEMP_DIR/IERC721.abi  -ns Contracts -o $OUT_DIR
