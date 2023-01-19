@@ -380,6 +380,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.PathParameters.Add("token_address", api.Client.ClientUtils.ParameterToString(tokenAddress)); // path parameter
             localVarRequestOptions.PathParameters.Add("token_id", api.Client.ClientUtils.ParameterToString(tokenId)); // path parameter
             if (includeFees != null)
@@ -567,6 +569,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             if (pageSize != null)
             {

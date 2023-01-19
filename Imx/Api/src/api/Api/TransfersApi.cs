@@ -591,6 +591,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.HeaderParameters.Add("x-imx-eth-address", api.Client.ClientUtils.ParameterToString(xImxEthAddress)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-imx-eth-signature", api.Client.ClientUtils.ParameterToString(xImxEthSignature)); // header parameter
             localVarRequestOptions.Data = createTransferRequestV2;
@@ -773,6 +775,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.HeaderParameters.Add("x-imx-eth-address", api.Client.ClientUtils.ParameterToString(xImxEthAddress)); // header parameter
             localVarRequestOptions.HeaderParameters.Add("x-imx-eth-signature", api.Client.ClientUtils.ParameterToString(xImxEthSignature)); // header parameter
             localVarRequestOptions.Data = createTransferRequest;
@@ -939,6 +943,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.Data = getSignableTransferRequestV2;
 
             localVarRequestOptions.Operation = "TransfersApi.GetSignableTransfer";
@@ -1085,6 +1091,8 @@ namespace api.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+
             localVarRequestOptions.Data = getSignableTransferRequest;
 
             localVarRequestOptions.Operation = "TransfersApi.GetSignableTransferV1";
@@ -1229,6 +1237,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             localVarRequestOptions.PathParameters.Add("id", api.Client.ClientUtils.ParameterToString(id)); // path parameter
 
@@ -1399,6 +1409,8 @@ namespace api.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
+
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
 
             if (pageSize != null)
             {
