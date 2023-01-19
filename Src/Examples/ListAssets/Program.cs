@@ -1,19 +1,14 @@
 ﻿using api.Api;
 using api.Client;
 using api.Model;
-using System;
-
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-Configuration config = new Configuration();
-config.BasePath = "https://api.sandbox.x.immutable.com";
-var apiInstance = new AssetsApi(config);
+using Sdk;
 
 try
 {
+    Client client = new Client(EnvironmentSelector.Sandbox);
+    
     // Get a list of assets
-    ListAssetsResponse result = apiInstance.ListAssets();
+    ListAssetsResponse result = client.AssetsApi.ListAssets();
     Console.WriteLine(result.ToJson());
 }
 catch (ApiException  e)

@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Api\src\api\api.csproj" />
+    <ProjectReference Include="..\..\IMX\SDK\SDK.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
