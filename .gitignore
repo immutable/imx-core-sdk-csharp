@@ -1,0 +1,11 @@
+# IDE folders
+
+.vscode
+.idea
+
+# mac 
+
+.DS_Store
+
+# Generated files
+Solidity/Generated
