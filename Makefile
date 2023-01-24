@@ -1,5 +1,5 @@
 GENERATOR_TEMPLATES_DIR=generator-templates
-GENERATED_CODE_DIR=Src/Api
+GENERATED_CODE_DIR=Src/IMX/Api
 CURRENT_DIR = $(shell pwd)
 
 .PHONY: generate-openapi-prod
