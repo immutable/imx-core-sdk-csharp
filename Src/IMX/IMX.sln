@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK", "SDK\SDK.csproj", "{638FC2D1-07AC-4BDC-B7E0-E2C2E7584DCD}"
+#
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMX.SDK", "IMX.SDK\IMX.SDK.csproj", "{638FC2D1-07AC-4BDC-B7E0-E2C2E7584DCD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListAssets", "..\Examples\ListAssets\ListAssets.csproj", "{3367B272-FB6B-4871-B148-89D7928F9763}"
 EndProject

@@ -4,6 +4,7 @@
         <Nullable>disable</Nullable>
         <LangVersion>8</LangVersion>
         <TargetFrameworks>net6.0;netstandard2.1</TargetFrameworks>
+        <RootNamespace>SDK</RootNamespace>
     </PropertyGroup>
 
      <ItemGroup>
