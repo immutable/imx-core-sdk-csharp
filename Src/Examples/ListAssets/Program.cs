@@ -1,5 +1,4 @@
-﻿using api.Api;
-using api.Client;
+﻿using api.Client;
 using api.Model;
 using Sdk;
 
