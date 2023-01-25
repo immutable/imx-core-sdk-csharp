@@ -1,4 +1,4 @@
-# api.Model.MetadataSchemaProperty
+# Imx.Sdk.Gen.Model.MetadataSchemaProperty
 
 ## Properties
 

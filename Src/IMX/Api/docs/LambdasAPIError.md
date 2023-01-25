@@ -1,4 +1,4 @@
-# api.Model.LambdasAPIError
+# Imx.Sdk.Gen.Model.LambdasAPIError
 
 ## Properties
 

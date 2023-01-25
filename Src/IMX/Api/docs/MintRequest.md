@@ -1,4 +1,4 @@
-# api.Model.MintRequest
+# Imx.Sdk.Gen.Model.MintRequest
 
 ## Properties
 

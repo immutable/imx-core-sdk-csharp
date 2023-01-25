@@ -1,4 +1,4 @@
-# api.Model.MintFee
+# Imx.Sdk.Gen.Model.MintFee
 
 ## Properties
 

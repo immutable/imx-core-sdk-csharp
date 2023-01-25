@@ -31,5 +31,5 @@ generate-api:
 		-c ./app/dotnetcore-client-config.yaml \
 		-t ./app/Generator-Templates/Templates \
 		-o /app/$(GENERATED_CODE_DIR)
-	rm -rf $(GENERATED_CODE_DIR)/src/api.Test $(GENERATED_CODE_DIR)/git_push.sh
+	rm -rf $(GENERATED_CODE_DIR)/src/Imx.Sdk.Gen.Test $(GENERATED_CODE_DIR)/git_push.sh
 	

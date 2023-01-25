@@ -1,4 +1,4 @@
-# api.Api.MintsApi
+# Imx.Sdk.Gen.Api.MintsApi
 
 All URIs are relative to *https://api.sandbox.x.immutable.com*
 
@@ -21,9 +21,9 @@ Get details of a mint with the given ID
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -115,9 +115,9 @@ Get details of a mintable token with the given token address and token ID
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -210,9 +210,9 @@ Get information about token mints. If you want to get information about tokens t
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -333,9 +333,9 @@ Mint tokens in a batch with fees
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {

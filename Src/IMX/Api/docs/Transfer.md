@@ -1,4 +1,4 @@
-# api.Model.Transfer
+# Imx.Sdk.Gen.Model.Transfer
 
 ## Properties
 

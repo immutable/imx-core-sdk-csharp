@@ -1,4 +1,4 @@
-# api.Model.CreateExchangeAndURLAPIRequest
+# Imx.Sdk.Gen.Model.CreateExchangeAndURLAPIRequest
 
 ## Properties
 

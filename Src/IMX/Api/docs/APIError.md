@@ -1,4 +1,4 @@
-# api.Model.APIError
+# Imx.Sdk.Gen.Model.APIError
 
 ## Properties
 

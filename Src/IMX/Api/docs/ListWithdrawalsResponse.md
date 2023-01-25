@@ -1,4 +1,4 @@
-# api.Model.ListWithdrawalsResponse
+# Imx.Sdk.Gen.Model.ListWithdrawalsResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Api.DepositsApi
+# Imx.Sdk.Gen.Api.DepositsApi
 
 All URIs are relative to *https://api.sandbox.x.immutable.com*
 
@@ -20,9 +20,9 @@ Get details of a deposit with the given ID
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -111,9 +111,9 @@ Gets details of a signable deposit
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -202,9 +202,9 @@ Get a list of deposits
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-# api.Model.Deposit
+# Imx.Sdk.Gen.Model.Deposit
 
 ## Properties
 

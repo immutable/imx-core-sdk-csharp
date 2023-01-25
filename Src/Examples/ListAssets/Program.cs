@@ -1,6 +1,6 @@
-﻿using api.Client;
-using api.Model;
-using Sdk;
+﻿using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
+using Imx.Sdk;
 
 try
 {

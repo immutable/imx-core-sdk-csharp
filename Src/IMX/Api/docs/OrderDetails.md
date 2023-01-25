@@ -1,4 +1,4 @@
-# api.Model.OrderDetails
+# Imx.Sdk.Gen.Model.OrderDetails
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Model.EncodeAssetTokenData
+# Imx.Sdk.Gen.Model.EncodeAssetTokenData
 
 ## Properties
 

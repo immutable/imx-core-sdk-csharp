@@ -1,4 +1,4 @@
-# api.Api.EncodingApi
+# Imx.Sdk.Gen.Api.EncodingApi
 
 All URIs are relative to *https://api.sandbox.x.immutable.com*
 
@@ -18,9 +18,9 @@ Retrieves the Starkex Encoded format for a given asset so that it can be used as
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {

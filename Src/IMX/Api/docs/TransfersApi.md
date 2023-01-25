@@ -1,4 +1,4 @@
-# api.Api.TransfersApi
+# Imx.Sdk.Gen.Api.TransfersApi
 
 All URIs are relative to *https://api.sandbox.x.immutable.com*
 
@@ -23,9 +23,9 @@ Create a new transfer request
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -122,9 +122,9 @@ Create a new transfer request
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -221,9 +221,9 @@ Gets bulk details of a signable transfer
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -316,9 +316,9 @@ Gets details of a signable transfer
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -407,9 +407,9 @@ Get details of a transfer with the given ID
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -500,9 +500,9 @@ Get a list of transfers
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-# api.Api.MetadataRefreshesApi
+# Imx.Sdk.Gen.Api.MetadataRefreshesApi
 
 All URIs are relative to *https://api.sandbox.x.immutable.com*
 
@@ -21,9 +21,9 @@ Get a list of metadata refreshes
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -124,9 +124,9 @@ Get metadata refresh errors
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -228,9 +228,9 @@ Get metadata refresh results
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -328,9 +328,9 @@ Request metadata refresh for provided tokens
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {

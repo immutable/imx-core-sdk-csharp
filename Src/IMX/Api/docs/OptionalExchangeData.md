@@ -1,4 +1,4 @@
-# api.Model.OptionalExchangeData
+# Imx.Sdk.Gen.Model.OptionalExchangeData
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Model.SuccessResponse
+# Imx.Sdk.Gen.Model.SuccessResponse
 
 ## Properties
 

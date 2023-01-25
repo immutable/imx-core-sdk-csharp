@@ -1,4 +1,4 @@
-# api.Model.MetadataRefreshSummary
+# Imx.Sdk.Gen.Model.MetadataRefreshSummary
 
 ## Properties
 

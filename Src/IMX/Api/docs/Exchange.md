@@ -1,4 +1,4 @@
-# api.Model.Exchange
+# Imx.Sdk.Gen.Model.Exchange
 
 ## Properties
 

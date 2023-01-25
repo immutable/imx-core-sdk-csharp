@@ -1,4 +1,4 @@
-# api.Model.CancelOrderRequest
+# Imx.Sdk.Gen.Model.CancelOrderRequest
 
 ## Properties
 

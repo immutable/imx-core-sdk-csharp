@@ -1,4 +1,4 @@
-# api.Model.ExchangeCreateExchangeAndURLResponse
+# Imx.Sdk.Gen.Model.ExchangeCreateExchangeAndURLResponse
 
 ## Properties
 
