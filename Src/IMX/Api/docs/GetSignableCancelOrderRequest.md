@@ -1,4 +1,4 @@
-# api.Model.GetSignableCancelOrderRequest
+# Imx.Sdk.Gen.Model.GetSignableCancelOrderRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Model.Trade
+# Imx.Sdk.Gen.Model.Trade
 
 ## Properties
 

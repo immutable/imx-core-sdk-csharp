@@ -1,4 +1,4 @@
-# api.Model.CreateOrderResponse
+# Imx.Sdk.Gen.Model.CreateOrderResponse
 
 ## Properties
 

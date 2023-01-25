@@ -1,4 +1,4 @@
-# api.Model.CreateTradeResponse
+# Imx.Sdk.Gen.Model.CreateTradeResponse
 
 ## Properties
 

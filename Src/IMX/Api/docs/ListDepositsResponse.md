@@ -1,4 +1,4 @@
-# api.Model.ListDepositsResponse
+# Imx.Sdk.Gen.Model.ListDepositsResponse
 
 ## Properties
 

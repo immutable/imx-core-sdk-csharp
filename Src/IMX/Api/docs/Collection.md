@@ -1,4 +1,4 @@
-# api.Model.Collection
+# Imx.Sdk.Gen.Model.Collection
 
 ## Properties
 

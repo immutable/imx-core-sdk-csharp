@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\..\IMX\Api\src\api\api.csproj" />
-    <ProjectReference Include="..\..\IMX\IMX.SDK\IMX.SDK.csproj" />
+    <ProjectReference Include="..\..\IMX\Api\src\Imx.Sdk.Gen\Imx.Sdk.Gen.csproj" />
+    <ProjectReference Include="..\..\IMX\Imx.Sdk\Imx.Sdk.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,4 +1,4 @@
-# api.Model.CreateTransferRequest
+# Imx.Sdk.Gen.Model.CreateTransferRequest
 
 ## Properties
 

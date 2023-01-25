@@ -1,4 +1,4 @@
-# api.Model.ListBalancesResponse
+# Imx.Sdk.Gen.Model.ListBalancesResponse
 
 ## Properties
 

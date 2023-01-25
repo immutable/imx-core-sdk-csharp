@@ -1,4 +1,4 @@
-# api.Model.NftprimarytransactionCreateAPIRequest
+# Imx.Sdk.Gen.Model.NftprimarytransactionCreateAPIRequest
 
 ## Properties
 

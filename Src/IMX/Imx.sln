@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+#
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imx.Sdk", "Imx.Sdk\Imx.Sdk.csproj", "{638FC2D1-07AC-4BDC-B7E0-E2C2E7584DCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListAssets", "..\Examples\ListAssets\ListAssets.csproj", "{3367B272-FB6B-4871-B148-89D7928F9763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imx.Sdk.Gen", "Api\src\Imx.Sdk.Gen\Imx.Sdk.Gen.csproj", "{915D4BDD-0630-4569-B144-2BC65BD39BCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{638FC2D1-07AC-4BDC-B7E0-E2C2E7584DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{638FC2D1-07AC-4BDC-B7E0-E2C2E7584DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{638FC2D1-07AC-4BDC-B7E0-E2C2E7584DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{638FC2D1-07AC-4BDC-B7E0-E2C2E7584DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73382493-2376-48FE-8940-1C8A1DAAD975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73382493-2376-48FE-8940-1C8A1DAAD975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3367B272-FB6B-4871-B148-89D7928F9763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915D4BDD-0630-4569-B144-2BC65BD39BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915D4BDD-0630-4569-B144-2BC65BD39BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915D4BDD-0630-4569-B144-2BC65BD39BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915D4BDD-0630-4569-B144-2BC65BD39BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

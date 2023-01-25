@@ -1,4 +1,4 @@
-# api.Model.AggregateLimit
+# Imx.Sdk.Gen.Model.AggregateLimit
 
 ## Properties
 

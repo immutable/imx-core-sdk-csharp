@@ -1,4 +1,4 @@
-# api.Model.GetSignableDepositResponse
+# Imx.Sdk.Gen.Model.GetSignableDepositResponse
 
 ## Properties
 

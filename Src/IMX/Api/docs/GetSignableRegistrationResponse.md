@@ -1,4 +1,4 @@
-# api.Model.GetSignableRegistrationResponse
+# Imx.Sdk.Gen.Model.GetSignableRegistrationResponse
 
 ## Properties
 

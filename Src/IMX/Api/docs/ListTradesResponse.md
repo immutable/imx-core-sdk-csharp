@@ -1,4 +1,4 @@
-# api.Model.ListTradesResponse
+# Imx.Sdk.Gen.Model.ListTradesResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Model.CollectionFilter
+# Imx.Sdk.Gen.Model.CollectionFilter
 
 ## Properties
 

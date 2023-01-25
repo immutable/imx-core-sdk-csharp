@@ -1,4 +1,4 @@
-# api.Model.MintUser
+# Imx.Sdk.Gen.Model.MintUser
 
 ## Properties
 

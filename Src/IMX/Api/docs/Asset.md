@@ -1,4 +1,4 @@
-# api.Model.Asset
+# Imx.Sdk.Gen.Model.Asset
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Model.AddMetadataSchemaToCollectionRequest
+# Imx.Sdk.Gen.Model.AddMetadataSchemaToCollectionRequest
 
 ## Properties
 

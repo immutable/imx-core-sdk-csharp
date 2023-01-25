@@ -1,4 +1,4 @@
-# api.Model.WidgetParams
+# Imx.Sdk.Gen.Model.WidgetParams
 
 ## Properties
 

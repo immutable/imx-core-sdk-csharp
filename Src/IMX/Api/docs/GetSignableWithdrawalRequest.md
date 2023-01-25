@@ -1,4 +1,4 @@
-# api.Model.GetSignableWithdrawalRequest
+# Imx.Sdk.Gen.Model.GetSignableWithdrawalRequest
 
 ## Properties
 

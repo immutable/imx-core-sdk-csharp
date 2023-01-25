@@ -1,4 +1,4 @@
-# api.Model.MintTokenDataV2
+# Imx.Sdk.Gen.Model.MintTokenDataV2
 
 ## Properties
 

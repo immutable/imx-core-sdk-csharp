@@ -1,4 +1,4 @@
-# api.Model.EncodeAssetRequestToken
+# Imx.Sdk.Gen.Model.EncodeAssetRequestToken
 
 ## Properties
 

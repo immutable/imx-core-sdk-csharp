@@ -1,4 +1,4 @@
-# api.Model.EncodeAssetResponse
+# Imx.Sdk.Gen.Model.EncodeAssetResponse
 
 ## Properties
 

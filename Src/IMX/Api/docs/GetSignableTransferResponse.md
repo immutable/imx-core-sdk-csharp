@@ -1,4 +1,4 @@
-# api.Model.GetSignableTransferResponse
+# Imx.Sdk.Gen.Model.GetSignableTransferResponse
 
 ## Properties
 

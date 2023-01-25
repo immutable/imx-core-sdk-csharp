@@ -1,4 +1,4 @@
-# api.Model.NftprimarytransactionCreateResponse
+# Imx.Sdk.Gen.Model.NftprimarytransactionCreateResponse
 
 ## Properties
 

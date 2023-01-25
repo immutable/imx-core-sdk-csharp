@@ -1,4 +1,4 @@
-# api.Model.GetSignableOrderResponse
+# Imx.Sdk.Gen.Model.GetSignableOrderResponse
 
 ## Properties
 

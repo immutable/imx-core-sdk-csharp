@@ -1,4 +1,4 @@
-# api.Model.GetMetadataRefreshResponse
+# Imx.Sdk.Gen.Model.GetMetadataRefreshResponse
 
 ## Properties
 

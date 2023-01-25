@@ -1,4 +1,4 @@
-# api.Model.NftprimarytransactionTransactionData
+# Imx.Sdk.Gen.Model.NftprimarytransactionTransactionData
 
 ## Properties
 
