@@ -2,6 +2,7 @@
 using Imx.Sdk.Gen.Api;
 using Imx.Sdk.Gen.Client;
 using Imx.Sdk.Gen.Model;
+using System.Collections.Generic;
 
 namespace Imx.Sdk
 {
@@ -113,6 +114,64 @@ namespace Imx.Sdk
         }
 	    #endregion Assets
 
+        #region Balances
+        
+        public Balance GetBalance(string owner, string address, int operationIndex = 0)
+        {
+            return BalancesApi.GetBalance(owner, address);
+        }
+        
+        public async System.Threading.Tasks.Task<Balance> GetBalanceAsync(string owner, string address, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await BalancesApi.GetBalanceAsync(owner, address, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+
+        public ListBalancesResponse ListBalances(string owner, int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), int operationIndex = 0)
+        {
+            return BalancesApi.ListBalances(owner, pageSize, cursor, orderBy, direction);
+        }
+
+        public async System.Threading.Tasks.Task<ListBalancesResponse> ListBalancesAsync(string owner, int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await BalancesApi.ListBalancesAsync(owner, pageSize, cursor, orderBy, direction, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+
+        #endregion Balances
+
+        #region Collections
+
+        public Collection GetCollection(string address, int operationIndex = 0)
+        {
+            return CollectionsApi.GetCollection(address, operationIndex);
+        }
+
+        public async System.Threading.Tasks.Task<Collection> GetCollectionAsync(string address, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await CollectionsApi.GetCollectionAsync(address, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+
+        public CollectionFilter ListCollectionFilters(string address, int? pageSize = default(int?), string nextPageToken = default(string), int operationIndex = 0)
+        {
+            return CollectionsApi.ListCollectionFilters(address, pageSize, nextPageToken);
+        }
+
+        public async System.Threading.Tasks.Task<CollectionFilter> ListCollectionFiltersAsync(string address, int? pageSize = default(int?), string nextPageToken = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await CollectionsApi.ListCollectionFiltersAsync(address, pageSize, nextPageToken, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+
+        public ListCollectionsResponse ListCollections(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string blacklist = default(string), string whitelist = default(string), string keyword = default(string), int operationIndex = 0)
+        {
+            return CollectionsApi.ListCollections(pageSize, cursor, orderBy, direction, blacklist, whitelist, keyword);
+        }
+
+        public async System.Threading.Tasks.Task<ListCollectionsResponse> ListCollectionsAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string blacklist = default(string), string whitelist = default(string), string keyword = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await CollectionsApi.ListCollectionsAsync(pageSize, cursor, orderBy, direction, blacklist, whitelist, keyword, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+
+        #endregion Collections
+
 		#region Deposits
 
 		public Deposit GetDeposit(string id, int operationIndex = 0)
@@ -137,6 +196,30 @@ namespace Imx.Sdk
 
 		#endregion Deposits
 
+        #region Exchanges
+
+        public Exchange GetExchange(string id, int operationIndex = 0)
+        {
+            return ExchangesApi.GetExchange(id);
+        }
+
+        public async System.Threading.Tasks.Task<Exchange> GetExchangeAsync(string id, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await ExchangesApi.GetExchangeAsync(id, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+
+        public GetTransactionsResponse GetExchanges(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), int? id = default(int?), string walletAddress = default(string), string status = default(string), string provider = default(string), string transferId = default(string), int operationIndex = 0)
+        {
+            return ExchangesApi.GetExchanges(pageSize, cursor, orderBy, direction, id, walletAddress, status, provider, transferId);
+        }
+
+        public async System.Threading.Tasks.Task<GetTransactionsResponse> GetExchangesAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), int? id = default(int?), string walletAddress = default(string), string status = default(string), string provider = default(string), string transferId = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await ExchangesApi.GetExchangesAsync(pageSize, cursor, orderBy, direction, id, walletAddress, status, provider, transferId, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+
+        #endregion Exchanges
+
 		#region Mints
 
 		public Mint GetMint(string id, int operationIndex = 0)
@@ -160,6 +243,50 @@ namespace Imx.Sdk
         }
 
 		#endregion Mints
+
+        #region Metadata
+
+        public List<MetadataSchemaProperty> GetMetadataSchema(string address, int operationIndex = 0)
+        {
+            return MetadataApi.GetMetadataSchema(address, operationIndex);
+        }
+
+        public async System.Threading.Tasks.Task<List<MetadataSchemaProperty>> GetMetadataSchemaAsync(string address, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await MetadataApi.GetMetadataSchemaAsync(address, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+
+        #endregion Metadata
+
+        #region NftCheckoutPrimary
+
+        public NftprimarytransactionGetResponse GetNftPrimaryTransaction(string transactionId, int operationIndex = 0)
+        {
+            return NftCheckoutPrimaryApi.GetNftPrimaryTransaction(transactionId);
+        }
+
+        public async System.Threading.Tasks.Task<NftprimarytransactionGetResponse> GetNftPrimaryTransactionAsync(string transactionId, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await NftCheckoutPrimaryApi.GetNftPrimaryTransactionAsync(transactionId, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+        
+
+        public NftprimarytransactionListTransactionsResponse ListNftPrimaryTransactions(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string transactionId = default(string), string contractAddress = default(string), string sellerWalletAddress = default(string), string userWalletAddress = default(string), string status = default(string), string provider = default(string), string mintId = default(string), int operationIndex = 0)
+        {
+            return NftCheckoutPrimaryApi.GetNftPrimaryTransactions(pageSize, cursor, orderBy, direction, transactionId, contractAddress, sellerWalletAddress, userWalletAddress, status, provider, mintId);
+        }
+
+        public async System.Threading.Tasks.Task<NftprimarytransactionListTransactionsResponse> ListNftPrimaryTransactionsAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string transactionId = default(string), string contractAddress = default(string), string sellerWalletAddress = default(string), string userWalletAddress = default(string), string status = default(string), string provider = default(string), string mintId = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await NftCheckoutPrimaryApi.GetNftPrimaryTransactionsAsync(pageSize, cursor, orderBy, direction, transactionId, contractAddress, sellerWalletAddress, userWalletAddress, status, provider, mintId, operationIndex, cancellationToken).ConfigureAwait(false);
+        }
+        
+        public CurrencyWithLimits GetCurrenciesNFTCheckoutPrimary(string provider = default(string), bool? includeLimits = default(bool?), int operationIndex = 0)
+        {
+            return NftCheckoutPrimaryApi.GetCurrenciesNFTCheckoutPrimary(provider, includeLimits);
+        }
+
+        #endregion NftCheckoutPrimary
 
 		#region Orders
 

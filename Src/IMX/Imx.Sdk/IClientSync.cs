@@ -1,4 +1,5 @@
 using Imx.Sdk.Gen.Model;
+using System.Collections.Generic;
 
 namespace Imx.Sdk 
 {
@@ -45,6 +46,87 @@ namespace Imx.Sdk
         
         #endregion Assets
     
+        #region Balances
+
+        /// <summary>
+        /// Fetches the token balances of the user
+        /// </summary>
+        /// <remarks>
+        /// Fetches the token balances of the user
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="owner">Address of the owner/user</param>
+        /// <param name="address">Token address</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Balance</returns>
+        Balance GetBalance(string owner, string address, int operationIndex = 0);
+
+        /// <summary>
+        /// Get a list of balances for given user
+        /// </summary>
+        /// <remarks>
+        /// Get a list of balances for given user
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="owner">Ethereum wallet address for user</param>
+        /// <param name="pageSize">Page size of the result (optional)</param>
+        /// <param name="cursor">Cursor (optional)</param>
+        /// <param name="orderBy">Property to sort by (optional)</param>
+        /// <param name="direction">Direction to sort (asc/desc) (optional)</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ListBalancesResponse</returns>
+        ListBalancesResponse ListBalances(string owner, int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), int operationIndex = 0);
+
+        #endregion Balances
+
+        #region Collections
+
+        /// <summary>
+        /// Get details of a collection at the given address
+        /// </summary>
+        /// <remarks>
+        /// Get details of a collection at the given address
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="address">Collection contract address</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Collection</returns>
+        Collection GetCollection(string address, int operationIndex = 0);
+
+        /// <summary>
+        /// Get a list of collection filters
+        /// </summary>
+        /// <remarks>
+        /// Get a list of collection filters
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="address">Collection contract address</param>
+        /// <param name="pageSize">Page size of the result (optional)</param>
+        /// <param name="nextPageToken">Next page token (optional)</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>CollectionFilter</returns>
+        CollectionFilter ListCollectionFilters(string address, int? pageSize = default(int?), string nextPageToken = default(string), int operationIndex = 0);
+
+        /// <summary>
+        /// Get a list of collections
+        /// </summary>
+        /// <remarks>
+        /// Get a list of collections
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageSize">Page size of the result (optional)</param>
+        /// <param name="cursor">Cursor (optional)</param>
+        /// <param name="orderBy">Property to sort by (optional)</param>
+        /// <param name="direction">Direction to sort (asc/desc) (optional)</param>
+        /// <param name="blacklist">List of collections not to be included, separated by commas (optional)</param>
+        /// <param name="whitelist">List of collections to be included, separated by commas (optional)</param>
+        /// <param name="keyword">Keyword to search in collection name and description (optional)</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ListCollectionsResponse</returns>
+        ListCollectionsResponse ListCollections(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string blacklist = default(string), string whitelist = default(string), string keyword = default(string), int operationIndex = 0);
+
+        #endregion Collections
+        
         #region Deposits
 
         /// <summary>
@@ -88,6 +170,59 @@ namespace Imx.Sdk
 
         #endregion Deposits
         
+        #region Exchanges
+
+        /// <summary>
+        /// Get an exchange by ID
+        /// </summary>
+        /// <remarks>
+        /// Get an exchange by ID
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">Exchange ID</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Exchange</returns>
+        Exchange GetExchange(string id, int operationIndex = 0);
+
+        /// <summary>
+        /// Returns a list of exchanges based on the request
+        /// </summary>
+        /// <remarks>
+        /// Returns a list of exchanges based on the request
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageSize">Page size of the result (optional)</param>
+        /// <param name="cursor">Cursor (optional)</param>
+        /// <param name="orderBy">Property to sort by (optional)</param>
+        /// <param name="direction">Direction to sort (optional)</param>
+        /// <param name="id">Transaction ID (optional)</param>
+        /// <param name="walletAddress">Ethereum address of the user who created transaction (optional)</param>
+        /// <param name="status">Transaction status (optional)</param>
+        /// <param name="provider">Provider name (optional)</param>
+        /// <param name="transferId">Transfer ID (optional)</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GetTransactionsResponse</returns>
+        GetTransactionsResponse GetExchanges(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), int? id = default(int?), string walletAddress = default(string), string status = default(string), string provider = default(string), string transferId = default(string), int operationIndex = 0);
+
+
+        #endregion Exchanges
+
+        #region Metadata
+
+        /// <summary>
+        /// Get collection metadata schema
+        /// </summary>
+        /// <remarks>
+        /// Get collection metadata schema
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="address">Collection contract address</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>List&lt;MetadataSchemaProperty&gt;</returns>
+        List<MetadataSchemaProperty> GetMetadataSchema(string address, int operationIndex = 0);
+
+        #endregion Metadata
+
         #region Mints
 
         /// <summary>
@@ -130,6 +265,57 @@ namespace Imx.Sdk
         ListMintsResponse ListMints(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenName = default(string), string tokenAddress = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), int operationIndex = 0);
 
         #endregion Mints
+
+        #region NftCheckoutPrimary
+        
+        /// <summary>
+        /// Get NFT primary sale transaction by id
+        /// </summary>
+        /// <remarks>
+        /// given a transaction id, returns the corresponding transaction representing a mint executed from a card payment
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="transactionId">Transaction id</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>NftprimarytransactionGetResponse</returns>
+        NftprimarytransactionGetResponse GetNftPrimaryTransaction(string transactionId, int operationIndex = 0);
+
+        /// <summary>
+        /// Get a list of NFT primary sales transactions
+        /// </summary>
+        /// <remarks>
+        /// Returns a list of NFT primary sales transactions
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="pageSize">Page size of the result (optional)</param>
+        /// <param name="cursor">Cursor (optional)</param>
+        /// <param name="orderBy">Property to sort by (optional)</param>
+        /// <param name="direction">Direction to sort (asc/desc) (optional)</param>
+        /// <param name="transactionId">Transaction id (optional)</param>
+        /// <param name="contractAddress">Contract address of the asset (optional)</param>
+        /// <param name="sellerWalletAddress">Ethereum address of the seller (optional)</param>
+        /// <param name="userWalletAddress">Ethereum address of the user who wants to create transaction (optional)</param>
+        /// <param name="status">Transaction status (optional)</param>
+        /// <param name="provider">Checkout provider name (optional)</param>
+        /// <param name="mintId">Minting transaction ID - see mintTokens response (optional)</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>NftprimarytransactionListTransactionsResponse</returns>
+        NftprimarytransactionListTransactionsResponse ListNftPrimaryTransactions(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string transactionId = default(string), string contractAddress = default(string), string sellerWalletAddress = default(string), string userWalletAddress = default(string), string status = default(string), string provider = default(string), string mintId = default(string), int operationIndex = 0);
+
+        /// <summary>
+        /// Get currencies with limits
+        /// </summary>
+        /// <remarks>
+        /// Returns a list of supported currencies and their limits
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="provider">Provider name (optional)</param>
+        /// <param name="includeLimits">Flag if limits should be included in the response or not (optional)</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>CurrencyWithLimits</returns>
+        CurrencyWithLimits GetCurrenciesNFTCheckoutPrimary(string provider = default(string), bool? includeLimits = default(bool?), int operationIndex = 0);
+        
+        #endregion NftCheckoutPrimary
 
         #region Orders
 
