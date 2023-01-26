@@ -40,7 +40,7 @@ Select one of the following Ethereum networks Immutable X platform currently sup
 | Sandbox     | The default test network (currently, it is Goërli)  |
 | Mainnet     | Ethereum network    | 
 
-```go
+```csharp
 using Imx.Sdk;
 
 try
@@ -52,6 +52,7 @@ try
 }
 catch (Exception e)
 {
+    Console.WriteLine("Error message: " + e.Message);
     Console.WriteLine(e.StackTrace);
 }
 ```
@@ -71,7 +72,7 @@ Examples of the types of data that are typically retrieved include:
 
 #### Get all collections and get assets from a particular collection:
 
-```go
+```csharp
 using Imx.Sdk.Gen.Client;
 using Imx.Sdk.Gen.Model;
 using Imx.Sdk;
@@ -87,12 +88,18 @@ try
     Console.WriteLine(result.ToJson());
     
     // List Collections
-    
+    ListCollectionsResponse resultListCollections = client.ListCollections();
+    Console.WriteLine(resultListCollections.ToJson());
 }
 catch (ApiException  e)
 {
-    Console.WriteLine("Exception when calling AssetsApi.ListAssets: " + e.Message);
+    Console.WriteLine("Exception when calling Api: " + e.Message);
     Console.WriteLine("Status Code: " + e.ErrorCode);
+    Console.WriteLine(e.StackTrace);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Error message: " + e.Message);
     Console.WriteLine(e.StackTrace);
 }
 ```
