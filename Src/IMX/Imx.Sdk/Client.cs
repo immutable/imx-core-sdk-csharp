@@ -46,23 +46,23 @@ namespace Imx.Sdk
     {
 	    public Environment Environment;
 	    
-	    public readonly AssetsApi AssetsApi;
-	    public readonly BalancesApi BalancesApi;
-	    public readonly CollectionsApi CollectionsApi;
-	    public readonly DepositsApi DepositsApi;
-	    public readonly EncodingApi EncodingApi;
-	    public readonly ExchangesApi ExchangesApi;
-	    public readonly MetadataApi MetadataApi;
-	    public readonly MetadataRefreshesApi MetadataRefreshesApi;
-	    public readonly MintsApi MintsApi;
-	    public readonly NftCheckoutPrimaryApi NftCheckoutPrimaryApi;
-	    public readonly OrdersApi OrdersApi;
-	    public readonly ProjectsApi ProjectsApi;
-	    public readonly TokensApi TokensApi;
-	    public readonly TradesApi TradesApi;
-	    public readonly TransfersApi TransfersApi;
-	    public readonly UsersApi UsersApi;
-	    public readonly WithdrawalsApi WithdrawalsApi;
+	    public readonly IAssetsApi AssetsApi;
+	    public readonly IBalancesApi BalancesApi;
+	    public readonly ICollectionsApi CollectionsApi;
+	    public readonly IDepositsApi DepositsApi;
+	    public readonly IEncodingApi EncodingApi;
+	    public readonly IExchangesApi ExchangesApi;
+	    public readonly IMetadataApi MetadataApi;
+	    public readonly IMetadataRefreshesApi MetadataRefreshesApi;
+	    public readonly IMintsApi MintsApi;
+	    public readonly INftCheckoutPrimaryApi NftCheckoutPrimaryApi;
+	    public readonly IOrdersApi OrdersApi;
+	    public readonly IProjectsApi ProjectsApi;
+	    public readonly ITokensApi TokensApi;
+	    public readonly ITradesApi TradesApi;
+	    public readonly ITransfersApi TransfersApi;
+	    public readonly IUsersApi UsersApi;
+	    public readonly IWithdrawalsApi WithdrawalsApi;
 
 	    public Client(Config cfg)
         {
