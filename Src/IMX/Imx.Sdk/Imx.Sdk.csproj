@@ -6,6 +6,7 @@
         <TargetFrameworks>net6.0;netstandard2.1</TargetFrameworks>
         <RootNamespace>Imx.Sdk</RootNamespace>
         <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
      <ItemGroup>
