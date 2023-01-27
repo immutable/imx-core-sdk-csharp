@@ -10,7 +10,7 @@
 
 The Immutable Core SDK C# provides convenient access to the Immutable X API and Ethereum smart contracts for applications written on the Immutable X platform.
 
-Currently, our SDK supports interactions with our application-specific rollup based on StarkWare's [StarkEx](https://starkware.co/starkex/). In the future, we'll be adding [StarkNet](https://starknet.io/) support across our platform.
+Currently, this SDK supports interactions with our application-specific rollup based on StarkWare's [StarkEx](https://starkware.co/starkex/). In the future, when we start supporting other rollups, this SDK will also provide access to those.
 
 ## Documentation
 
