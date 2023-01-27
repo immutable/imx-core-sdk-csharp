@@ -20,7 +20,7 @@ namespace Imx.Sdk
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Asset</returns>
         System.Threading.Tasks.Task<Asset> GetAssetAsync(string tokenAddress, string tokenId, bool? includeFees = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-        
+
         /// <summary>
         /// Get a list of assets Get a list of assets
         /// </summary>
@@ -44,11 +44,11 @@ namespace Imx.Sdk
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ListAssetsResponse</returns>
         System.Threading.Tasks.Task<ListAssetsResponse> ListAssetsAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string name = default(string), string metadata = default(string), bool? sellOrders = default(bool?), bool? buyOrders = default(bool?), bool? includeFees = default(bool?), string collection = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-        
+
         #endregion Assets
-    
+
         #region Balances
-        
+
         /// <summary>
         /// Fetches the token balances of the user
         /// </summary>
@@ -169,7 +169,7 @@ namespace Imx.Sdk
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ListDepositsResponse</returns>
         System.Threading.Tasks.Task<ListDepositsResponse> ListDepositsAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-        
+
         #endregion Deposits
 
         #region Exchanges
@@ -227,7 +227,7 @@ namespace Imx.Sdk
         #endregion Metadata
 
         #region Mints
-        
+
         /// <summary>
         /// Get details of a mint with the given ID
         /// </summary>
@@ -337,7 +337,7 @@ namespace Imx.Sdk
         /// <returns>Task of Order</returns>
         System.Threading.Tasks.Task<Order> GetOrderAsync(string id, bool? includeFees = default(bool?), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
-         /// <summary>
+        /// <summary>
         /// Get a list of orders
         /// </summary>
         /// <remarks>
@@ -381,7 +381,7 @@ namespace Imx.Sdk
 
         #region Tokens
 
-         /// <summary>
+        /// <summary>
         /// Get details of a token
         /// </summary>
         /// <remarks>
