@@ -1,7 +1,7 @@
 using Imx.Sdk.Gen.Model;
 using System.Collections.Generic;
 
-namespace Imx.Sdk 
+namespace Imx.Sdk
 {
     interface IClientSync
     {
@@ -41,9 +41,9 @@ namespace Imx.Sdk
         /// <param name="auxiliaryFeeRecipients">Comma separated string of fee recipients that are to be paired with auxiliary_fee_percentages (optional)</param>
         /// <returns>ListAssetsResponse</returns>
         ListAssetsResponse ListAssets(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string name = default(string), string metadata = default(string), bool? sellOrders = default(bool?), bool? buyOrders = default(bool?), bool? includeFees = default(bool?), string collection = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string));
-        
+
         #endregion Assets
-    
+
         #region Balances
 
         /// <summary>
@@ -119,7 +119,7 @@ namespace Imx.Sdk
         ListCollectionsResponse ListCollections(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string blacklist = default(string), string whitelist = default(string), string keyword = default(string));
 
         #endregion Collections
-        
+
         #region Deposits
 
         /// <summary>
@@ -160,7 +160,7 @@ namespace Imx.Sdk
         ListDepositsResponse ListDeposits(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string));
 
         #endregion Deposits
-        
+
         #region Exchanges
 
         /// <summary>
@@ -253,7 +253,7 @@ namespace Imx.Sdk
         #endregion Mints
 
         #region NftCheckoutPrimary
-        
+
         /// <summary>
         /// Get NFT primary sale transaction by id
         /// </summary>
@@ -297,7 +297,7 @@ namespace Imx.Sdk
         /// <param name="includeLimits">Flag if limits should be included in the response or not (optional)</param>
         /// <returns>CurrencyWithLimits</returns>
         CurrencyWithLimits GetCurrenciesNFTCheckoutPrimary(string provider = default(string), bool? includeLimits = default(bool?));
-        
+
         #endregion NftCheckoutPrimary
 
         #region Orders
@@ -483,7 +483,7 @@ namespace Imx.Sdk
 
         #region Withdrawals
 
-         /// <summary>
+        /// <summary>
         /// Gets details of withdrawal with the given ID
         /// </summary>
         /// <remarks>

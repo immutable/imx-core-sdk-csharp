@@ -6,72 +6,72 @@ using System.Collections.Generic;
 
 namespace Imx.Sdk
 {
-	public struct Environment
-	{
-		public string BaseApiPath;
-		public string EthereumRpc;
-		public string RegistrationContractAddress;
-		public string CoreContractAddress;
-		public BigInteger ChainId;
-	}
+    public struct Environment
+    {
+        public string BaseApiPath;
+        public string EthereumRpc;
+        public string RegistrationContractAddress;
+        public string CoreContractAddress;
+        public BigInteger ChainId;
+    }
 
-	public static class EnvironmentSelector
-	{
-		public static Environment Sandbox = new Environment()
-		{
-			BaseApiPath = "https://api.sandbox.x.immutable.com",
-			EthereumRpc = "https://eth-goerli.alchemyapi.io/v2/",
-			RegistrationContractAddress = "0x1C97Ada273C9A52253f463042f29117090Cd7D83",
-			CoreContractAddress = "0x7917eDb51ecD6CdB3F9854c3cc593F33de10c623",
-			ChainId = 5, // Goërli
-		};
-		public static Environment Mainnet = new Environment()
-		{
-			BaseApiPath = "https://api.x.immutable.com",
-			EthereumRpc = "https://eth-mainnet.alchemyapi.io/v2/",
-			RegistrationContractAddress = "0x72a06bf2a1CE5e39cBA06c0CAb824960B587d64c",
-			CoreContractAddress = "0x5FDCCA53617f4d2b9134B29090C87D01058e27e9",
-			ChainId = 1, // Mainnet
-		};
-	}
-	
-	public struct Config
-	{
-		public string AlchemyApiKey;
-		public Configuration ApiConfig;
-		public Environment Environment;
-	}
-		
+    public static class EnvironmentSelector
+    {
+        public static Environment Sandbox = new Environment()
+        {
+            BaseApiPath = "https://api.sandbox.x.immutable.com",
+            EthereumRpc = "https://eth-goerli.alchemyapi.io/v2/",
+            RegistrationContractAddress = "0x1C97Ada273C9A52253f463042f29117090Cd7D83",
+            CoreContractAddress = "0x7917eDb51ecD6CdB3F9854c3cc593F33de10c623",
+            ChainId = 5, // Goërli
+        };
+        public static Environment Mainnet = new Environment()
+        {
+            BaseApiPath = "https://api.x.immutable.com",
+            EthereumRpc = "https://eth-mainnet.alchemyapi.io/v2/",
+            RegistrationContractAddress = "0x72a06bf2a1CE5e39cBA06c0CAb824960B587d64c",
+            CoreContractAddress = "0x5FDCCA53617f4d2b9134B29090C87D01058e27e9",
+            ChainId = 1, // Mainnet
+        };
+    }
+
+    public struct Config
+    {
+        public string AlchemyApiKey;
+        public Configuration ApiConfig;
+        public Environment Environment;
+    }
+
     public class Client : IClientSync, IClientAsync
     {
-	    public Environment Environment;
-	    
-	    public readonly IAssetsApi AssetsApi;
-	    public readonly IBalancesApi BalancesApi;
-	    public readonly ICollectionsApi CollectionsApi;
-	    public readonly IDepositsApi DepositsApi;
-	    public readonly IEncodingApi EncodingApi;
-	    public readonly IExchangesApi ExchangesApi;
-	    public readonly IMetadataApi MetadataApi;
-	    public readonly IMetadataRefreshesApi MetadataRefreshesApi;
-	    public readonly IMintsApi MintsApi;
-	    public readonly INftCheckoutPrimaryApi NftCheckoutPrimaryApi;
-	    public readonly IOrdersApi OrdersApi;
-	    public readonly IProjectsApi ProjectsApi;
-	    public readonly ITokensApi TokensApi;
-	    public readonly ITradesApi TradesApi;
-	    public readonly ITransfersApi TransfersApi;
-	    public readonly IUsersApi UsersApi;
-	    public readonly IWithdrawalsApi WithdrawalsApi;
+        public Environment Environment;
 
-	    public Client(Config cfg)
+        public readonly IAssetsApi AssetsApi;
+        public readonly IBalancesApi BalancesApi;
+        public readonly ICollectionsApi CollectionsApi;
+        public readonly IDepositsApi DepositsApi;
+        public readonly IEncodingApi EncodingApi;
+        public readonly IExchangesApi ExchangesApi;
+        public readonly IMetadataApi MetadataApi;
+        public readonly IMetadataRefreshesApi MetadataRefreshesApi;
+        public readonly IMintsApi MintsApi;
+        public readonly INftCheckoutPrimaryApi NftCheckoutPrimaryApi;
+        public readonly IOrdersApi OrdersApi;
+        public readonly IProjectsApi ProjectsApi;
+        public readonly ITokensApi TokensApi;
+        public readonly ITradesApi TradesApi;
+        public readonly ITransfersApi TransfersApi;
+        public readonly IUsersApi UsersApi;
+        public readonly IWithdrawalsApi WithdrawalsApi;
+
+        public Client(Config cfg)
         {
-	        this.Environment = cfg.Environment;
+            this.Environment = cfg.Environment;
             Configuration config = new Configuration
             {
-	            BasePath = this.Environment.BaseApiPath
+                BasePath = this.Environment.BaseApiPath
             };
-            
+
             this.AssetsApi = new AssetsApi(config);
             this.BalancesApi = new BalancesApi(config);
             this.CollectionsApi = new CollectionsApi(config);
@@ -90,10 +90,10 @@ namespace Imx.Sdk
             this.UsersApi = new UsersApi(config);
             this.WithdrawalsApi = new WithdrawalsApi(config);
         }
-	    
-		#region  Assets
 
-		public Asset GetAsset(string tokenAddress, string tokenId, bool? includeFees = default(bool?))
+        #region  Assets
+
+        public Asset GetAsset(string tokenAddress, string tokenId, bool? includeFees = default(bool?))
         {
             return AssetsApi.GetAsset(tokenAddress, tokenId, includeFees);
         }
@@ -103,24 +103,24 @@ namespace Imx.Sdk
             return await AssetsApi.GetAssetAsync(tokenAddress, tokenId, includeFees, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		public ListAssetsResponse ListAssets(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string name = default(string), string metadata = default(string), bool? sellOrders = default(bool?), bool? buyOrders = default(bool?), bool? includeFees = default(bool?), string collection = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string))
+        public ListAssetsResponse ListAssets(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string name = default(string), string metadata = default(string), bool? sellOrders = default(bool?), bool? buyOrders = default(bool?), bool? includeFees = default(bool?), string collection = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string))
         {
             return AssetsApi.ListAssets(pageSize, cursor, orderBy, direction, user, status, name, metadata, sellOrders, buyOrders, includeFees, collection, updatedMinTimestamp, updatedMaxTimestamp, auxiliaryFeePercentages, auxiliaryFeeRecipients);
         }
 
-		public async System.Threading.Tasks.Task<ListAssetsResponse> ListAssetsAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string name = default(string), string metadata = default(string), bool? sellOrders = default(bool?), bool? buyOrders = default(bool?), bool? includeFees = default(bool?), string collection = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ListAssetsResponse> ListAssetsAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string name = default(string), string metadata = default(string), bool? sellOrders = default(bool?), bool? buyOrders = default(bool?), bool? includeFees = default(bool?), string collection = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await AssetsApi.ListAssetsAsync(pageSize, cursor, orderBy, direction, user, status, name, metadata, sellOrders, buyOrders, includeFees, collection, updatedMinTimestamp, updatedMaxTimestamp, auxiliaryFeePercentages, auxiliaryFeeRecipients, 0, cancellationToken).ConfigureAwait(false);
         }
-	    #endregion Assets
+        #endregion Assets
 
         #region Balances
-        
+
         public Balance GetBalance(string owner, string address)
         {
             return BalancesApi.GetBalance(owner, address);
         }
-        
+
         public async System.Threading.Tasks.Task<Balance> GetBalanceAsync(string owner, string address, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await BalancesApi.GetBalanceAsync(owner, address, 0, cancellationToken).ConfigureAwait(false);
@@ -172,9 +172,9 @@ namespace Imx.Sdk
 
         #endregion Collections
 
-		#region Deposits
+        #region Deposits
 
-		public Deposit GetDeposit(string id)
+        public Deposit GetDeposit(string id)
         {
             return DepositsApi.GetDeposit(id);
         }
@@ -182,7 +182,7 @@ namespace Imx.Sdk
         public async System.Threading.Tasks.Task<Deposit> GetDepositAsync(string id, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await DepositsApi.GetDepositAsync(id, 0, cancellationToken).ConfigureAwait(false);
-		}
+        }
 
         public ListDepositsResponse ListDeposits(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string))
         {
@@ -194,7 +194,7 @@ namespace Imx.Sdk
             return await DepositsApi.ListDepositsAsync(pageSize, cursor, orderBy, direction, user, status, minTimestamp, maxTimestamp, tokenType, tokenId, assetId, tokenAddress, tokenName, minQuantity, maxQuantity, metadata, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		#endregion Deposits
+        #endregion Deposits
 
         #region Exchanges
 
@@ -220,9 +220,9 @@ namespace Imx.Sdk
 
         #endregion Exchanges
 
-		#region Mints
+        #region Mints
 
-		public Mint GetMint(string id)
+        public Mint GetMint(string id)
         {
             return MintsApi.GetMint(id);
         }
@@ -237,12 +237,12 @@ namespace Imx.Sdk
             return MintsApi.ListMints(pageSize, cursor, orderBy, direction, user, status, minTimestamp, maxTimestamp, tokenType, tokenId, assetId, tokenName, tokenAddress, minQuantity, maxQuantity, metadata);
         }
 
-		public async System.Threading.Tasks.Task<ListMintsResponse> ListMintsAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenName = default(string), string tokenAddress = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ListMintsResponse> ListMintsAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenName = default(string), string tokenAddress = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await MintsApi.ListMintsAsync(pageSize, cursor, orderBy, direction, user, status, minTimestamp, maxTimestamp, tokenType, tokenId, assetId, tokenName, tokenAddress, minQuantity, maxQuantity, metadata, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		#endregion Mints
+        #endregion Mints
 
         #region Metadata
 
@@ -269,7 +269,7 @@ namespace Imx.Sdk
         {
             return await NftCheckoutPrimaryApi.GetNftPrimaryTransactionAsync(transactionId, 0, cancellationToken).ConfigureAwait(false);
         }
-        
+
 
         public NftprimarytransactionListTransactionsResponse ListNftPrimaryTransactions(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string transactionId = default(string), string contractAddress = default(string), string sellerWalletAddress = default(string), string userWalletAddress = default(string), string status = default(string), string provider = default(string), string mintId = default(string))
         {
@@ -280,7 +280,7 @@ namespace Imx.Sdk
         {
             return await NftCheckoutPrimaryApi.GetNftPrimaryTransactionsAsync(pageSize, cursor, orderBy, direction, transactionId, contractAddress, sellerWalletAddress, userWalletAddress, status, provider, mintId, 0, cancellationToken).ConfigureAwait(false);
         }
-        
+
         public CurrencyWithLimits GetCurrenciesNFTCheckoutPrimary(string provider = default(string), bool? includeLimits = default(bool?))
         {
             return NftCheckoutPrimaryApi.GetCurrenciesNFTCheckoutPrimary(provider, includeLimits);
@@ -293,7 +293,7 @@ namespace Imx.Sdk
 
         #endregion NftCheckoutPrimary
 
-		#region Orders
+        #region Orders
 
         public Order GetOrder(string id, bool? includeFees = default(bool?), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string))
         {
@@ -304,32 +304,32 @@ namespace Imx.Sdk
         {
             return await OrdersApi.GetOrderAsync(id, includeFees, auxiliaryFeePercentages, auxiliaryFeeRecipients, 0, cancellationToken).ConfigureAwait(false);
         }
-		
-		public ListOrdersResponse ListOrders(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string buyTokenType = default(string), string buyTokenId = default(string), string buyAssetId = default(string), string buyTokenAddress = default(string), string buyTokenName = default(string), string buyMinQuantity = default(string), string buyMaxQuantity = default(string), string buyMetadata = default(string), string sellTokenType = default(string), string sellTokenId = default(string), string sellAssetId = default(string), string sellTokenAddress = default(string), string sellTokenName = default(string), string sellMinQuantity = default(string), string sellMaxQuantity = default(string), string sellMetadata = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string), bool? includeFees = default(bool?))
+
+        public ListOrdersResponse ListOrders(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string buyTokenType = default(string), string buyTokenId = default(string), string buyAssetId = default(string), string buyTokenAddress = default(string), string buyTokenName = default(string), string buyMinQuantity = default(string), string buyMaxQuantity = default(string), string buyMetadata = default(string), string sellTokenType = default(string), string sellTokenId = default(string), string sellAssetId = default(string), string sellTokenAddress = default(string), string sellTokenName = default(string), string sellMinQuantity = default(string), string sellMaxQuantity = default(string), string sellMetadata = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string), bool? includeFees = default(bool?))
         {
             return OrdersApi.ListOrders(pageSize, cursor, orderBy, direction, user, status, minTimestamp, maxTimestamp, updatedMinTimestamp, updatedMaxTimestamp, buyTokenType, buyTokenId, buyAssetId, buyTokenAddress, buyTokenName, buyMinQuantity, buyMaxQuantity, buyMetadata, sellTokenType, sellTokenId, sellAssetId, sellTokenAddress, sellTokenName, sellMinQuantity, sellMaxQuantity, sellMetadata, auxiliaryFeePercentages, auxiliaryFeeRecipients, includeFees);
         }
 
-		public async System.Threading.Tasks.Task<ListOrdersResponse> ListOrdersAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string buyTokenType = default(string), string buyTokenId = default(string), string buyAssetId = default(string), string buyTokenAddress = default(string), string buyTokenName = default(string), string buyMinQuantity = default(string), string buyMaxQuantity = default(string), string buyMetadata = default(string), string sellTokenType = default(string), string sellTokenId = default(string), string sellAssetId = default(string), string sellTokenAddress = default(string), string sellTokenName = default(string), string sellMinQuantity = default(string), string sellMaxQuantity = default(string), string sellMetadata = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string), bool? includeFees = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ListOrdersResponse> ListOrdersAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string updatedMinTimestamp = default(string), string updatedMaxTimestamp = default(string), string buyTokenType = default(string), string buyTokenId = default(string), string buyAssetId = default(string), string buyTokenAddress = default(string), string buyTokenName = default(string), string buyMinQuantity = default(string), string buyMaxQuantity = default(string), string buyMetadata = default(string), string sellTokenType = default(string), string sellTokenId = default(string), string sellAssetId = default(string), string sellTokenAddress = default(string), string sellTokenName = default(string), string sellMinQuantity = default(string), string sellMaxQuantity = default(string), string sellMetadata = default(string), string auxiliaryFeePercentages = default(string), string auxiliaryFeeRecipients = default(string), bool? includeFees = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await OrdersApi.ListOrdersAsync(pageSize, cursor, orderBy, direction, user, status, minTimestamp, maxTimestamp, updatedMinTimestamp, updatedMaxTimestamp, buyTokenType, buyTokenId, buyAssetId, buyTokenAddress, buyTokenName, buyMinQuantity, buyMaxQuantity, buyMetadata, sellTokenType, sellTokenId, sellAssetId, sellTokenAddress, sellTokenName, sellMinQuantity, sellMaxQuantity, sellMetadata, auxiliaryFeePercentages, auxiliaryFeeRecipients, includeFees, 0, cancellationToken).ConfigureAwait(false);
         }
-	
-		#endregion Orders
 
-		#region Tokens
-		
-		public TokenDetails GetToken(string address)
+        #endregion Orders
+
+        #region Tokens
+
+        public TokenDetails GetToken(string address)
         {
             return TokensApi.GetToken(address);
         }
-		
-		public async System.Threading.Tasks.Task<TokenDetails> GetTokenAsync(string address, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+
+        public async System.Threading.Tasks.Task<TokenDetails> GetTokenAsync(string address, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await TokensApi.GetTokenAsync(address, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		public ListTokensResponse ListTokens(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string address = default(string), string symbols = default(string))
+        public ListTokensResponse ListTokens(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string address = default(string), string symbols = default(string))
         {
             return TokensApi.ListTokens(pageSize, cursor, orderBy, direction, address, symbols);
         }
@@ -339,33 +339,33 @@ namespace Imx.Sdk
             return await TokensApi.ListTokensAsync(pageSize, cursor, orderBy, direction, address, symbols, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		#endregion Tokens
+        #endregion Tokens
 
-		#region Transfers
+        #region Transfers
 
-		public Transfer GetTransfer(string id)
+        public Transfer GetTransfer(string id)
         {
             return TransfersApi.GetTransfer(id);
         }
 
-		public async System.Threading.Tasks.Task<Transfer> GetTransferAsync(string id, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Transfer> GetTransferAsync(string id, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await TransfersApi.GetTransferAsync(id, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		public ListTransfersResponse ListTransfers(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string receiver = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string))
+        public ListTransfersResponse ListTransfers(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string receiver = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string))
         {
             return TransfersApi.ListTransfers(pageSize, cursor, orderBy, direction, user, receiver, status, minTimestamp, maxTimestamp, tokenType, tokenId, assetId, tokenAddress, tokenName, minQuantity, maxQuantity, metadata);
         }
 
-		public async System.Threading.Tasks.Task<ListTransfersResponse> ListTransfersAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string receiver = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ListTransfersResponse> ListTransfersAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string receiver = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await TransfersApi.ListTransfersAsync(pageSize, cursor, orderBy, direction, user, receiver, status, minTimestamp, maxTimestamp, tokenType, tokenId, assetId, tokenAddress, tokenName, minQuantity, maxQuantity, metadata, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		#endregion Transfers
-		
-		#region Trades
+        #endregion Transfers
+
+        #region Trades
 
         public Trade GetTrade(string id)
         {
@@ -377,7 +377,7 @@ namespace Imx.Sdk
             return await TradesApi.GetTradeAsync(id, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		public ListTradesResponse ListTrades(string partyATokenType = default(string), string partyATokenAddress = default(string), string partyBTokenType = default(string), string partyBTokenAddress = default(string), string partyBTokenId = default(string), int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string minTimestamp = default(string), string maxTimestamp = default(string))
+        public ListTradesResponse ListTrades(string partyATokenType = default(string), string partyATokenAddress = default(string), string partyBTokenType = default(string), string partyBTokenAddress = default(string), string partyBTokenId = default(string), int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string minTimestamp = default(string), string maxTimestamp = default(string))
         {
             return TradesApi.ListTrades(partyATokenType, partyATokenAddress, partyBTokenType, partyBTokenAddress, partyBTokenId, pageSize, cursor, orderBy, direction, minTimestamp, maxTimestamp);
         }
@@ -387,11 +387,11 @@ namespace Imx.Sdk
             return await TradesApi.ListTradesAsync(partyATokenType, partyATokenAddress, partyBTokenType, partyBTokenAddress, partyBTokenId, pageSize, cursor, orderBy, direction, minTimestamp, maxTimestamp, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		#endregion Trades
+        #endregion Trades
 
-		#region Users
+        #region Users
 
-		public GetUsersApiResponse GetUsers(string user)
+        public GetUsersApiResponse GetUsers(string user)
         {
             return UsersApi.GetUsers(user);
         }
@@ -401,11 +401,11 @@ namespace Imx.Sdk
             return await UsersApi.GetUsersAsync(user, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		#endregion Users
+        #endregion Users
 
-		#region Withdrawals
-		
-		public Withdrawal GetWithdrawal(string id)
+        #region Withdrawals
+
+        public Withdrawal GetWithdrawal(string id)
         {
             return WithdrawalsApi.GetWithdrawal(id);
         }
@@ -415,16 +415,16 @@ namespace Imx.Sdk
             return await WithdrawalsApi.GetWithdrawalAsync(id, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		public ListWithdrawalsResponse ListWithdrawals(bool? withdrawnToWallet = default(bool?), string rollupStatus = default(string), int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string))
+        public ListWithdrawalsResponse ListWithdrawals(bool? withdrawnToWallet = default(bool?), string rollupStatus = default(string), int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string))
         {
             return WithdrawalsApi.ListWithdrawals(withdrawnToWallet, rollupStatus, pageSize, cursor, orderBy, direction, user, status, minTimestamp, maxTimestamp, tokenType, tokenId, assetId, tokenAddress, tokenName, minQuantity, maxQuantity, metadata);
         }
 
-		public async System.Threading.Tasks.Task<ListWithdrawalsResponse> ListWithdrawalsAsync(bool? withdrawnToWallet = default(bool?), string rollupStatus = default(string), int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ListWithdrawalsResponse> ListWithdrawalsAsync(bool? withdrawnToWallet = default(bool?), string rollupStatus = default(string), int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenAddress = default(string), string tokenName = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-	        return await WithdrawalsApi.ListWithdrawalsAsync(withdrawnToWallet, rollupStatus, pageSize, cursor, orderBy, direction, user, status, minTimestamp, maxTimestamp, tokenType, tokenId, assetId, tokenAddress, tokenName, minQuantity, maxQuantity, metadata, 0, cancellationToken).ConfigureAwait(false);
+            return await WithdrawalsApi.ListWithdrawalsAsync(withdrawnToWallet, rollupStatus, pageSize, cursor, orderBy, direction, user, status, minTimestamp, maxTimestamp, tokenType, tokenId, assetId, tokenAddress, tokenName, minQuantity, maxQuantity, metadata, 0, cancellationToken).ConfigureAwait(false);
         }
 
-		#endregion Withdrawals
+        #endregion Withdrawals
     }
 }
