@@ -18,7 +18,7 @@ See the [Developer Home](https://docs.x.immutable.com/) for general information 
 
 * Getting started, see [Developer Docs](https://docs.x.immutable.com/docs/welcome/)
 * See the [API reference documentation](https://docs.x.immutable.com/reference) for more information on our API's.
-* Reference docs related to this (C# imx core) SDK can be found [here](https://docs.x.immutable.com/sdk-docs/core-sdk-csharp/overview) // Todo test link
+* Reference docs related to this (C# imx core) SDK can be found [here](https://docs.x.immutable.com/sdk-docs/core-sdk-csharp/overview)
 
 The following code snippets talk about how to get setup and use the various sections of the C# SDK for most common use cases. Any questions that are not covered here please reach out to team. See [Getting Help](#getting-help)
 
@@ -31,7 +31,7 @@ dotnet add package Imx.Sdk
 
 ## Initialization
 
-Initialize the Core SDK client with the network on which you want your application to run (see [all networks available](https://github.com/immutable/imx-core-sdk-csharp/blob/dev/Src/IMX/Imx.Sdk/Client.cs#L17)): // Todo link for Main branch
+Initialize the Core SDK client with the network on which you want your application to run (see [all networks available](https://github.com/immutable/imx-core-sdk-csharp/blob/main/Src/IMX/Imx.Sdk/Client.cs#L17)):
 
 Select one of the following Ethereum networks Immutable X platform currently supports.
 
