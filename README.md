@@ -8,13 +8,13 @@
 
 # Immutable Core SDK C#
 
-The Immutable Core SDK C# provides convenient access to the Immutable X API and Ethereum smart contracts for applications written on the Immutable X platform.
+The Immutable Core SDK C# provides convenient access to the ImmutableX API and Ethereum smart contracts for applications written on the ImmutableX platform.
 
 Currently, this SDK supports interactions with our application-specific rollup based on StarkWare's [StarkEx](https://starkware.co/starkex/). In the future, when we start supporting other rollups, this SDK will also provide access to those.
 
 ## Documentation
 
-See the [Developer Home](https://docs.x.immutable.com/) for general information on building on Immutable X.
+See the [Developer Home](https://docs.x.immutable.com/) for general information on building on ImmutableX.
 
 * Getting started, see [Developer Docs](https://docs.x.immutable.com/docs/welcome/)
 * See the [API reference documentation](https://docs.x.immutable.com/reference) for more information on our API's.
@@ -33,7 +33,7 @@ dotnet add package Imx.Sdk
 
 Initialize the Core SDK client with the network on which you want your application to run (see [all networks available](https://github.com/immutable/imx-core-sdk-csharp/blob/main/Src/IMX/Imx.Sdk/Client.cs#L17)):
 
-Select one of the following Ethereum networks Immutable X platform currently supports.
+Select one of the following Ethereum networks ImmutableX platform currently supports.
 
 | Environment | Description   |  
 |-------------|---------------|
@@ -59,7 +59,7 @@ catch (Exception e)
 
 ## Get data
 
-These methods allow you to read data about events, transactions or current state on Immutable X (layer 2). They do not require any user authentication because no state is being changed.
+These methods allow you to read data about events, transactions or current state on ImmutableX (layer 2). They do not require any user authentication because no state is being changed.
 
 Examples of the types of data that are typically retrieved include:
 
@@ -167,7 +167,7 @@ For any bug fixes.
 
 ## Getting help
 
-Immutable X is open to all to build on, with no approvals required. If you want to talk to us to learn more, or apply for developer grants, click below:
+ImmutableX is open to all to build on, with no approvals required. If you want to talk to us to learn more, or apply for developer grants, click below:
 
 [Contact us](https://www.immutable.com/contact)
 
@@ -177,13 +177,13 @@ To get help from other developers, discuss ideas, and stay up-to-date on what's 
 
 [Join us on Discord](https://discord.gg/TkVumkJ9D6)
 
-You can also join the conversation, connect with other projects, and ask questions in our Immutable X Discourse forum.
+You can also join the conversation, connect with other projects, and ask questions in our ImmutableX Discourse forum.
 
 [Visit the forum](https://forum.immutable.com/)
 
 #### Still need help?
 
-You can also apply for marketing support for your project. Or, if you need help with an issue related to what you're building with Immutable X, click below to submit an issue. Select _I have a question_ or _issue related to building on Immutable X_ as your issue type.
+You can also apply for marketing support for your project. Or, if you need help with an issue related to what you're building with ImmutableX, click below to submit an issue. Select _I have a question_ or _issue related to building on Immutable X_ as your issue type.
 
 [Contact support](https://support.immutable.com/hc/en-us/requests/new)
 
