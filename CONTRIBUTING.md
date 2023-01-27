@@ -9,7 +9,7 @@ First of all, thanks for being here! We greatly appreciate all community feedbac
 ## Contribution guidelines
 ### Coding conventions
 The code should:
-* Follow these [C# guidelines](./CSHARP_GUIDELINES.md)
+* Follow these [C# guidelines](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md)
 * Have no lint issues.
 * Be easy to fix, refactor and scale.
 
