@@ -1,4 +1,4 @@
-# api.Model.GetSignableRegistrationOffchainResponse
+# Imx.Sdk.Gen.Model.GetSignableRegistrationOffchainResponse
 
 ## Properties
 

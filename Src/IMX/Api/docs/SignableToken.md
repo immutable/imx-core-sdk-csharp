@@ -1,4 +1,4 @@
-# api.Model.SignableToken
+# Imx.Sdk.Gen.Model.SignableToken
 
 ## Properties
 

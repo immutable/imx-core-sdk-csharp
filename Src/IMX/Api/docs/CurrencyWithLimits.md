@@ -1,4 +1,4 @@
-# api.Model.CurrencyWithLimits
+# Imx.Sdk.Gen.Model.CurrencyWithLimits
 
 ## Properties
 

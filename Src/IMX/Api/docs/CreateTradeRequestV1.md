@@ -1,4 +1,4 @@
-# api.Model.CreateTradeRequestV1
+# Imx.Sdk.Gen.Model.CreateTradeRequestV1
 
 ## Properties
 

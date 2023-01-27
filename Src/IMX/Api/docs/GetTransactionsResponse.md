@@ -1,4 +1,4 @@
-# api.Model.GetTransactionsResponse
+# Imx.Sdk.Gen.Model.GetTransactionsResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Model.FeeToken
+# Imx.Sdk.Gen.Model.FeeToken
 
 ## Properties
 

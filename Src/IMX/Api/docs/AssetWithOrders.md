@@ -1,4 +1,4 @@
-# api.Model.AssetWithOrders
+# Imx.Sdk.Gen.Model.AssetWithOrders
 
 ## Properties
 

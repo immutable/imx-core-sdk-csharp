@@ -1,4 +1,4 @@
-# api.Model.UpdateCollectionRequest
+# Imx.Sdk.Gen.Model.UpdateCollectionRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Model.MintResultDetails
+# Imx.Sdk.Gen.Model.MintResultDetails
 
 ## Properties
 

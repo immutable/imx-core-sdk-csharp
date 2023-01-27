@@ -1,4 +1,4 @@
-# api.Model.OrderFeeInfo
+# Imx.Sdk.Gen.Model.OrderFeeInfo
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Model.ContractCreateAPIRequest
+# Imx.Sdk.Gen.Model.ContractCreateAPIRequest
 
 ## Properties
 

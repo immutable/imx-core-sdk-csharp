@@ -1,4 +1,4 @@
-# api.Api.BalancesApi
+# Imx.Sdk.Gen.Api.BalancesApi
 
 All URIs are relative to *https://api.sandbox.x.immutable.com*
 
@@ -19,9 +19,9 @@ Fetches the token balances of the user
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -112,9 +112,9 @@ Get a list of balances for given user
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {

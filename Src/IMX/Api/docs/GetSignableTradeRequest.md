@@ -1,4 +1,4 @@
-# api.Model.GetSignableTradeRequest
+# Imx.Sdk.Gen.Model.GetSignableTradeRequest
 
 ## Properties
 

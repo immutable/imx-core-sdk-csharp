@@ -1,4 +1,4 @@
-# api.Model.GetUsersApiResponse
+# Imx.Sdk.Gen.Model.GetUsersApiResponse
 
 ## Properties
 

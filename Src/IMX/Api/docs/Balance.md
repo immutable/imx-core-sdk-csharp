@@ -1,4 +1,4 @@
-# api.Model.Balance
+# Imx.Sdk.Gen.Model.Balance
 
 ## Properties
 

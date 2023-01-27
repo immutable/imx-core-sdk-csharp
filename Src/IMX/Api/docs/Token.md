@@ -1,4 +1,4 @@
-# api.Model.Token
+# Imx.Sdk.Gen.Model.Token
 
 ## Properties
 

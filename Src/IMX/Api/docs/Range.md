@@ -1,4 +1,4 @@
-# api.Model.Range
+# Imx.Sdk.Gen.Model.Range
 
 ## Properties
 

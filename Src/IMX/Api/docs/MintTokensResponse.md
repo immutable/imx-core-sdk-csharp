@@ -1,4 +1,4 @@
-# api.Model.MintTokensResponse
+# Imx.Sdk.Gen.Model.MintTokensResponse
 
 ## Properties
 

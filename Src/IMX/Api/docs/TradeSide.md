@@ -1,4 +1,4 @@
-# api.Model.TradeSide
+# Imx.Sdk.Gen.Model.TradeSide
 
 ## Properties
 

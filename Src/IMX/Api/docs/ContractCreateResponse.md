@@ -1,4 +1,4 @@
-# api.Model.ContractCreateResponse
+# Imx.Sdk.Gen.Model.ContractCreateResponse
 
 ## Properties
 

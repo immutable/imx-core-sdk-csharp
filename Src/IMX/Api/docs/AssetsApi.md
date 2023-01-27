@@ -1,4 +1,4 @@
-# api.Api.AssetsApi
+# Imx.Sdk.Gen.Api.AssetsApi
 
 All URIs are relative to *https://api.sandbox.x.immutable.com*
 
@@ -19,9 +19,9 @@ Get details of an asset
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {
@@ -116,9 +116,9 @@ Get a list of assets
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using api.Api;
-using api.Client;
-using api.Model;
+using Imx.Sdk.Gen.Api;
+using Imx.Sdk.Gen.Client;
+using Imx.Sdk.Gen.Model;
 
 namespace Example
 {

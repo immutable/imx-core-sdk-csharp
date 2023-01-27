@@ -1,4 +1,4 @@
-# api.Model.ListCollectionsResponse
+# Imx.Sdk.Gen.Model.ListCollectionsResponse
 
 ## Properties
 

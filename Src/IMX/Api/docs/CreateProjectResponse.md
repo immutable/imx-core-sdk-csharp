@@ -1,4 +1,4 @@
-# api.Model.CreateProjectResponse
+# Imx.Sdk.Gen.Model.CreateProjectResponse
 
 ## Properties
 

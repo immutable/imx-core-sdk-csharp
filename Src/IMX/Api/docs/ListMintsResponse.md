@@ -1,4 +1,4 @@
-# api.Model.ListMintsResponse
+# Imx.Sdk.Gen.Model.ListMintsResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# api.Model.MintableTokenDetails
+# Imx.Sdk.Gen.Model.MintableTokenDetails
 
 ## Properties
 

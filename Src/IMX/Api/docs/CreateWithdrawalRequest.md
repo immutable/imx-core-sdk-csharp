@@ -1,4 +1,4 @@
-# api.Model.CreateWithdrawalRequest
+# Imx.Sdk.Gen.Model.CreateWithdrawalRequest
 
 ## Properties
 
