@@ -83,7 +83,7 @@ try
         Environment = EnvironmentSelector.Sandbox
     });
 
-    // List Collections
+    // List collections
     ListCollectionsResponse resultListCollections = client.ListCollections(pageSize: 2);
     
     if (resultListCollections.Result.Count > 0)
