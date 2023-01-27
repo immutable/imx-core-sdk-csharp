@@ -2,7 +2,7 @@
 
 Initial release for Core SDK for C#.
 
-Includes the Api methods implemented for readonly endpoints for:
+Includes the API methods implemented for the following readonly endpoints:
   - Assets: Get & List
   - Balances: Get & List
   - Collections: Get & List & List with filters

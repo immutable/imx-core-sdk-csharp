@@ -1,4 +1,4 @@
-# Contributing to Immutable X's C# SDK
+# Contributing to ImmutableX's C# SDK
 
 First of all, thanks for being here! We greatly appreciate all community feedback and contributions to this repository.
 
@@ -10,8 +10,8 @@ First of all, thanks for being here! We greatly appreciate all community feedbac
 ### Coding conventions
 The code should:
 * Follow these [C# guidelines](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md)
-* Have no lint issues.
-* Be easy to fix, refactor and scale.
+* Have no lint issues
+* Be easy to fix, refactor and scale
 
 Do you want to contribute to Immutable X documentation?
 See our [docs repo](https://github.com/immutable/imx-docs/) and [contribution guidelines](https://github.com/immutable/imx-docs/blob/main/CONTRIBUTING.md).
