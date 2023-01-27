@@ -57,7 +57,7 @@ catch (Exception e)
 }
 ```
 
-## Get data (on assets, orders, past transactions, etc.)
+## Get data
 
 These methods allow you to read data about events, transactions or current state on Immutable X (layer 2). They do not require any user authentication because no state is being changed.
 
