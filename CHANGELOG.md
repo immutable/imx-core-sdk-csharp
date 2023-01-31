@@ -16,4 +16,4 @@ Includes the API methods implemented for the following readonly endpoints:
   - Trades: Get & List
   - Orders: Get & List
   - Users: Get
-  - Tokens: Get & Lists
+  - Tokens: Get & List
