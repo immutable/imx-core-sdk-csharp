@@ -6,15 +6,15 @@
     <AssemblyName>Imx.Sdk.Gen</AssemblyName>
     <PackageId>Imx.Sdk.Gen</PackageId>
     <OutputType>Library</OutputType>
-    <Authors>OpenAPI</Authors>
-    <Company>OpenAPI</Company>
-    <AssemblyTitle>OpenAPI Library</AssemblyTitle>
-    <Description>A library generated from a OpenAPI doc</Description>
+    <Authors>Immutable</Authors>
+    <Company>Immutable</Company>
+    <AssemblyTitle>Immutable C# Core SDK API Library</AssemblyTitle>
+    <Description>A library generated from a OpenAPI</Description>
     <Copyright>No Copyright</Copyright>
     <RootNamespace>Imx.Sdk.Gen</RootNamespace>
     <Version>0.1.0</Version>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Imx.Sdk.Gen.xml</DocumentationFile>
-    <RepositoryUrl>https://github.com/immutable/imx-core-sdk-dotnetcore.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/immutable/imx-core-sdk-csharp.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Minor update</PackageReleaseNotes>
     <IsPackable>true</IsPackable>
