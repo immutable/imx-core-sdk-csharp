@@ -7,12 +7,15 @@
         <RootNamespace>Imx.Sdk</RootNamespace>
         <IsPackable>true</IsPackable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageReadmeFile>$(ProjectDir)..\..\..\README.md</PackageReadmeFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
         
     </PropertyGroup>
 
     <ItemGroup>
        <ProjectReference Include="..\Api\src\Imx.Sdk.Gen\Imx.Sdk.Gen.csproj" />
+       <None Include="..\..\..\README.md" Pack="true" PackagePath="\"/>
+       <None Include="..\..\..\LICENSE" Pack="true" PackagePath="\"/>
      </ItemGroup> 
 
 </Project>
