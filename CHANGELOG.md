@@ -1,4 +1,4 @@
-## [Unreleased] - YYYY-MM-DD
+## [0.1.0] - 2023-01-31
 
 Initial release for Core SDK for C#.
 
@@ -16,4 +16,4 @@ Includes the API methods implemented for the following readonly endpoints:
   - Trades: Get & List
   - Orders: Get & List
   - Users: Get
-  - Tokens: Get & List
+  - Tokens: Get & Lists
