@@ -2,7 +2,7 @@ generatorName: csharp-netcore
 inputSpec: openapi.json
 gitHost: github.com
 gitUserId: immutable
-gitRepoId: imx-core-sdk-dotnetcore
+gitRepoId: imx-core-sdk-csharp
 enablePostProcessFile: true
 additionalProperties:
   packageName: Imx.Sdk.Gen

@@ -12,7 +12,13 @@ mkdir ${OUT_DIR}
 cd ${SRC_DIR}
 
 dotnet clean
-dotnet build --configuration Release -p:Version=${VERSION_STR} --no-incremental --no-restore
+
+# Delete temp build folders
+find . -name bin -type d -exec rm -rf {} \;
+find . -name obj -type d -exec rm -rf {} \;
+
+# Build and Package
+dotnet build --configuration Release -p:Version=${VERSION_STR} --no-incremental
 
 cd ${WORK_DIR}
 cp -f **/*.nupkg ${OUT_DIR}
