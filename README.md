@@ -25,11 +25,15 @@ The following sections provide information on how to set up and use the most com
 
 ## Installation
 
-```sh
-dotnet add package Imx.Sdk
-dotnet add package Imx.Sdk.Gen
-```
+Add following nuget packages
 
+https://www.nuget.org/packages/Imx.Sdk
+https://www.nuget.org/packages/Imx.Sdk.Gen
+
+```sh
+dotnet add package Imx.Sdk --version 0.1.0
+dotnet add package Imx.Sdk.Gen --version 0.1.0
+```
 ## Initialization
 
 Initialize the Core SDK client with the network on which you want your application to run (see [all networks available](https://github.com/immutable/imx-core-sdk-csharp/blob/main/Src/IMX/Imx.Sdk/Client.cs#L17)):
