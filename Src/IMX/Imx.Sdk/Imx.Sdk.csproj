@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Nullable>disable</Nullable>
+        <LangVersion>8</LangVersion>
+        <TargetFrameworks>net6.0;netstandard2.1</TargetFrameworks>
+        <RootNamespace>Imx.Sdk</RootNamespace>
+        <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+       <ProjectReference Include="..\Api\src\Imx.Sdk.Gen\Imx.Sdk.Gen.csproj" />
+     </ItemGroup> 
+
+</Project>
