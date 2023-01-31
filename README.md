@@ -27,6 +27,7 @@ The following sections provide information on how to set up and use the most com
 
 ```sh
 dotnet add package Imx.Sdk
+dotnet add package Imx.Sdk.Gen
 ```
 
 ## Initialization
