@@ -16,10 +16,10 @@ Includes the API methods implemented for the following readonly endpoints:
   - Metadata: Get
   - Mints: Get & List
   - NFT Checkout Primary: Get & List transactions, Get currencies -
-  - Deposits: Get & List - Done
-  - Withdrawals: Get & List - Done
-  - Transfers: Get & List - Done
-  - Trades: Get & List - Done
-  - Orders: Get & List - Done
-  - Users: Get - Done
+  - Deposits: Get & List
+  - Withdrawals: Get & List
+  - Transfers: Get & List
+  - Trades: Get & List
+  - Orders: Get & List
+  - Users: Get
   - Tokens: Get & List
