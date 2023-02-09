@@ -249,10 +249,9 @@ namespace Imx.Sdk
         /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenAddress">Address of the ERC721 contract</param>
         /// <param name="tokenId">ERC721 token ID</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of MintableTokenDetails</returns>
-        System.Threading.Tasks.Task<MintableTokenDetails> GetMintableTokenDetailsByClientTokenIdAsync(string tokenAddress, string tokenId, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<MintableTokenDetails> GetMintableTokenDetailsByClientTokenIdAsync(string tokenAddress, string tokenId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
 
         /// <summary>

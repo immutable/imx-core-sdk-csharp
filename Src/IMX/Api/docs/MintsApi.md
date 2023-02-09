@@ -7,7 +7,6 @@ All URIs are relative to *https://api.sandbox.x.immutable.com*
 | [**GetMint**](MintsApi.md#getmint) | **GET** /v1/mints/{id} | Get details of a mint with the given ID |
 | [**GetMintableTokenDetailsByClientTokenId**](MintsApi.md#getmintabletokendetailsbyclienttokenid) | **GET** /v1/mintable-token/{token_address}/{token_id} | Get details of a mintable token with the given token address and token ID |
 | [**ListMints**](MintsApi.md#listmints) | **GET** /v1/mints | Get a list of mints |
-| [**MintTokens**](MintsApi.md#minttokens) | **POST** /v2/mints | Mint Tokens V2 |
 
 <a name="getmint"></a>
 # **GetMint**
@@ -317,101 +316,6 @@ No authorization required
 |-------------|-------------|------------------|
 | **200** | OK |  -  |
 | **400** | Bad Request |  -  |
-| **500** | Internal Server Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="minttokens"></a>
-# **MintTokens**
-> MintTokensResponse MintTokens (List<MintRequest> mintTokensRequestV2)
-
-Mint Tokens V2
-
-Mint tokens in a batch with fees
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Imx.Sdk.Gen.Api;
-using Imx.Sdk.Gen.Client;
-using Imx.Sdk.Gen.Model;
-
-namespace Example
-{
-    public class MintTokensExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.sandbox.x.immutable.com";
-            var apiInstance = new MintsApi(config);
-            var mintTokensRequestV2 = new List<MintRequest>(); // List<MintRequest> | details of tokens to mint
-
-            try
-            {
-                // Mint Tokens V2
-                MintTokensResponse result = apiInstance.MintTokens(mintTokensRequestV2);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling MintsApi.MintTokens: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-#### Using the MintTokensWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Mint Tokens V2
-    ApiResponse<MintTokensResponse> response = apiInstance.MintTokensWithHttpInfo(mintTokensRequestV2);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling MintsApi.MintTokensWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
-### Parameters
-
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **mintTokensRequestV2** | [**List&lt;MintRequest&gt;**](MintRequest.md) | details of tokens to mint |  |
-
-### Return type
-
-[**MintTokensResponse**](MintTokensResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | OK |  * Mint_Limit_Reset - The expiry date of the current four-week window. <br>  * Mint_Limit - The mint limit available to the project for each four-week window. <br>  * Mint_Remaining - The amount of mints remaining for current four-week window. <br>  |
-| **400** | Bad Request |  -  |
-| **401** | Unauthorized |  -  |
-| **403** | Forbidden |  -  |
 | **500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

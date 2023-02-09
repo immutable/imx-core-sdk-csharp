@@ -33,7 +33,7 @@ namespace Imx.Sdk.Gen.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "0.1.0";
+        public const string Version = "0.1.1";
 
         /// <summary>
         /// Identifier for ISO 8601 DateTime Format
@@ -110,7 +110,7 @@ namespace Imx.Sdk.Gen.Client
         public Configuration()
         {
             Proxy = null;
-            UserAgent = WebUtility.UrlEncode("OpenAPI-Generator/0.1.0/csharp");
+            UserAgent = WebUtility.UrlEncode("OpenAPI-Generator/0.1.1/csharp");
             BasePath = "https://api.sandbox.x.immutable.com";
             DefaultHeaders = new ConcurrentDictionary<string, string>();
             ApiKey = new ConcurrentDictionary<string, string>();
@@ -518,7 +518,7 @@ namespace Imx.Sdk.Gen.Client
             report += "    OS: " + System.Environment.OSVersion + "\n";
             report += "    .NET Framework Version: " + System.Environment.Version  + "\n";
             report += "    Version of the API: 3.0\n";
-            report += "    SDK Package Version: 0.1.0\n";
+            report += "    SDK Package Version: 0.1.1\n";
 
             return report;
         }

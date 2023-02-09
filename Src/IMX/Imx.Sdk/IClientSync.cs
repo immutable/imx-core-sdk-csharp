@@ -233,9 +233,8 @@ namespace Imx.Sdk
         /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tokenAddress">Address of the ERC721 contract</param>
         /// <param name="tokenId">ERC721 token ID</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>MintableTokenDetails</returns>
-        MintableTokenDetails GetMintableTokenDetailsByClientTokenId(string tokenAddress, string tokenId, int operationIndex = 0);
+        MintableTokenDetails GetMintableTokenDetailsByClientTokenId(string tokenAddress, string tokenId);
 
         /// <summary>
         /// Get a list of mints
