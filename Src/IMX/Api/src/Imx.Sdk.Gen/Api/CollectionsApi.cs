@@ -28,33 +28,6 @@ namespace Imx.Sdk.Gen.Api
     {
         #region Synchronous Operations
         /// <summary>
-        /// Create collection
-        /// </summary>
-        /// <remarks>
-        /// Create collection
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp. See https://docs.x.immutable.com/docs/generate-imx-signature</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="createCollectionRequest">create a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Collection</returns>
-        Collection CreateCollection(string iMXSignature, string iMXTimestamp, CreateCollectionRequest createCollectionRequest, int operationIndex = 0);
-
-        /// <summary>
-        /// Create collection
-        /// </summary>
-        /// <remarks>
-        /// Create collection
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp. See https://docs.x.immutable.com/docs/generate-imx-signature</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="createCollectionRequest">create a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Collection</returns>
-        ApiResponse<Collection> CreateCollectionWithHttpInfo(string iMXSignature, string iMXTimestamp, CreateCollectionRequest createCollectionRequest, int operationIndex = 0);
-        /// <summary>
         /// Get details of a collection at the given address
         /// </summary>
         /// <remarks>
@@ -139,35 +112,6 @@ namespace Imx.Sdk.Gen.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ListCollectionsResponse</returns>
         ApiResponse<ListCollectionsResponse> ListCollectionsWithHttpInfo(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string blacklist = default(string), string whitelist = default(string), string keyword = default(string), int operationIndex = 0);
-        /// <summary>
-        /// Update collection
-        /// </summary>
-        /// <remarks>
-        /// Update collection
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="address">Collection contract address</param>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="updateCollectionRequest">update a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Collection</returns>
-        Collection UpdateCollection(string address, string iMXSignature, string iMXTimestamp, UpdateCollectionRequest updateCollectionRequest, int operationIndex = 0);
-
-        /// <summary>
-        /// Update collection
-        /// </summary>
-        /// <remarks>
-        /// Update collection
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="address">Collection contract address</param>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="updateCollectionRequest">update a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Collection</returns>
-        ApiResponse<Collection> UpdateCollectionWithHttpInfo(string address, string iMXSignature, string iMXTimestamp, UpdateCollectionRequest updateCollectionRequest, int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
@@ -177,35 +121,6 @@ namespace Imx.Sdk.Gen.Api
     public interface ICollectionsApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
-        /// <summary>
-        /// Create collection
-        /// </summary>
-        /// <remarks>
-        /// Create collection
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp. See https://docs.x.immutable.com/docs/generate-imx-signature</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="createCollectionRequest">create a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Collection</returns>
-        System.Threading.Tasks.Task<Collection> CreateCollectionAsync(string iMXSignature, string iMXTimestamp, CreateCollectionRequest createCollectionRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-
-        /// <summary>
-        /// Create collection
-        /// </summary>
-        /// <remarks>
-        /// Create collection
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp. See https://docs.x.immutable.com/docs/generate-imx-signature</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="createCollectionRequest">create a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Collection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Collection>> CreateCollectionWithHttpInfoAsync(string iMXSignature, string iMXTimestamp, CreateCollectionRequest createCollectionRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Get details of a collection at the given address
         /// </summary>
@@ -297,37 +212,6 @@ namespace Imx.Sdk.Gen.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ListCollectionsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ListCollectionsResponse>> ListCollectionsWithHttpInfoAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string blacklist = default(string), string whitelist = default(string), string keyword = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-        /// <summary>
-        /// Update collection
-        /// </summary>
-        /// <remarks>
-        /// Update collection
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="address">Collection contract address</param>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="updateCollectionRequest">update a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Collection</returns>
-        System.Threading.Tasks.Task<Collection> UpdateCollectionAsync(string address, string iMXSignature, string iMXTimestamp, UpdateCollectionRequest updateCollectionRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-
-        /// <summary>
-        /// Update collection
-        /// </summary>
-        /// <remarks>
-        /// Update collection
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="address">Collection contract address</param>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="updateCollectionRequest">update a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Collection)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Collection>> UpdateCollectionWithHttpInfoAsync(string address, string iMXSignature, string iMXTimestamp, UpdateCollectionRequest updateCollectionRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -449,190 +333,6 @@ namespace Imx.Sdk.Gen.Api
         }
 
         /// <summary>
-        /// Create collection Create collection
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp. See https://docs.x.immutable.com/docs/generate-imx-signature</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="createCollectionRequest">create a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Collection</returns>
-        public Collection CreateCollection(string iMXSignature, string iMXTimestamp, CreateCollectionRequest createCollectionRequest, int operationIndex = 0)
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<Collection> localVarResponse = CreateCollectionWithHttpInfo(iMXSignature, iMXTimestamp, createCollectionRequest);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Create collection Create collection
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp. See https://docs.x.immutable.com/docs/generate-imx-signature</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="createCollectionRequest">create a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Collection</returns>
-        public Imx.Sdk.Gen.Client.ApiResponse<Collection> CreateCollectionWithHttpInfo(string iMXSignature, string iMXTimestamp, CreateCollectionRequest createCollectionRequest, int operationIndex = 0)
-        {
-            // verify the required parameter 'iMXSignature' is set
-            if (iMXSignature == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'iMXSignature' when calling CollectionsApi->CreateCollection");
-            }
-
-            // verify the required parameter 'iMXTimestamp' is set
-            if (iMXTimestamp == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'iMXTimestamp' when calling CollectionsApi->CreateCollection");
-            }
-
-            // verify the required parameter 'createCollectionRequest' is set
-            if (createCollectionRequest == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'createCollectionRequest' when calling CollectionsApi->CreateCollection");
-            }
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
-
-            localVarRequestOptions.HeaderParameters.Add("IMX-Signature", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(iMXSignature)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("IMX-Timestamp", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(iMXTimestamp)); // header parameter
-            localVarRequestOptions.Data = createCollectionRequest;
-
-            localVarRequestOptions.Operation = "CollectionsApi.CreateCollection";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = this.Client.Post<Collection>("/v1/collections", localVarRequestOptions, this.Configuration);
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("CreateCollection", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        /// Create collection Create collection
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp. See https://docs.x.immutable.com/docs/generate-imx-signature</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="createCollectionRequest">create a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Collection</returns>
-        public async System.Threading.Tasks.Task<Collection> CreateCollectionAsync(string iMXSignature, string iMXTimestamp, CreateCollectionRequest createCollectionRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<Collection> localVarResponse = await CreateCollectionWithHttpInfoAsync(iMXSignature, iMXTimestamp, createCollectionRequest, operationIndex, cancellationToken).ConfigureAwait(false);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Create collection Create collection
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp. See https://docs.x.immutable.com/docs/generate-imx-signature</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="createCollectionRequest">create a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Collection)</returns>
-        public async System.Threading.Tasks.Task<Imx.Sdk.Gen.Client.ApiResponse<Collection>> CreateCollectionWithHttpInfoAsync(string iMXSignature, string iMXTimestamp, CreateCollectionRequest createCollectionRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            // verify the required parameter 'iMXSignature' is set
-            if (iMXSignature == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'iMXSignature' when calling CollectionsApi->CreateCollection");
-            }
-
-            // verify the required parameter 'iMXTimestamp' is set
-            if (iMXTimestamp == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'iMXTimestamp' when calling CollectionsApi->CreateCollection");
-            }
-
-            // verify the required parameter 'createCollectionRequest' is set
-            if (createCollectionRequest == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'createCollectionRequest' when calling CollectionsApi->CreateCollection");
-            }
-
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.HeaderParameters.Add("IMX-Signature", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(iMXSignature)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("IMX-Timestamp", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(iMXTimestamp)); // header parameter
-            localVarRequestOptions.Data = createCollectionRequest;
-
-            localVarRequestOptions.Operation = "CollectionsApi.CreateCollection";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<Collection>("/v1/collections", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("CreateCollection", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
         /// Get details of a collection at the given address Get details of a collection at the given address
         /// </summary>
         /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
@@ -682,7 +382,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             localVarRequestOptions.PathParameters.Add("address", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(address)); // path parameter
 
@@ -832,7 +532,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             localVarRequestOptions.PathParameters.Add("address", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(address)); // path parameter
             if (pageSize != null)
@@ -1004,7 +704,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             if (pageSize != null)
             {
@@ -1151,208 +851,6 @@ namespace Imx.Sdk.Gen.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("ListCollections", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        /// Update collection Update collection
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="address">Collection contract address</param>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="updateCollectionRequest">update a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Collection</returns>
-        public Collection UpdateCollection(string address, string iMXSignature, string iMXTimestamp, UpdateCollectionRequest updateCollectionRequest, int operationIndex = 0)
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<Collection> localVarResponse = UpdateCollectionWithHttpInfo(address, iMXSignature, iMXTimestamp, updateCollectionRequest);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update collection Update collection
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="address">Collection contract address</param>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="updateCollectionRequest">update a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Collection</returns>
-        public Imx.Sdk.Gen.Client.ApiResponse<Collection> UpdateCollectionWithHttpInfo(string address, string iMXSignature, string iMXTimestamp, UpdateCollectionRequest updateCollectionRequest, int operationIndex = 0)
-        {
-            // verify the required parameter 'address' is set
-            if (address == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'address' when calling CollectionsApi->UpdateCollection");
-            }
-
-            // verify the required parameter 'iMXSignature' is set
-            if (iMXSignature == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'iMXSignature' when calling CollectionsApi->UpdateCollection");
-            }
-
-            // verify the required parameter 'iMXTimestamp' is set
-            if (iMXTimestamp == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'iMXTimestamp' when calling CollectionsApi->UpdateCollection");
-            }
-
-            // verify the required parameter 'updateCollectionRequest' is set
-            if (updateCollectionRequest == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'updateCollectionRequest' when calling CollectionsApi->UpdateCollection");
-            }
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
-
-            localVarRequestOptions.PathParameters.Add("address", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(address)); // path parameter
-            localVarRequestOptions.HeaderParameters.Add("IMX-Signature", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(iMXSignature)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("IMX-Timestamp", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(iMXTimestamp)); // header parameter
-            localVarRequestOptions.Data = updateCollectionRequest;
-
-            localVarRequestOptions.Operation = "CollectionsApi.UpdateCollection";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = this.Client.Patch<Collection>("/v1/collections/{address}", localVarRequestOptions, this.Configuration);
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("UpdateCollection", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        /// Update collection Update collection
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="address">Collection contract address</param>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="updateCollectionRequest">update a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Collection</returns>
-        public async System.Threading.Tasks.Task<Collection> UpdateCollectionAsync(string address, string iMXSignature, string iMXTimestamp, UpdateCollectionRequest updateCollectionRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<Collection> localVarResponse = await UpdateCollectionWithHttpInfoAsync(address, iMXSignature, iMXTimestamp, updateCollectionRequest, operationIndex, cancellationToken).ConfigureAwait(false);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Update collection Update collection
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="address">Collection contract address</param>
-        /// <param name="iMXSignature">String created by signing wallet address and timestamp</param>
-        /// <param name="iMXTimestamp">Unix Epoc timestamp</param>
-        /// <param name="updateCollectionRequest">update a collection</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Collection)</returns>
-        public async System.Threading.Tasks.Task<Imx.Sdk.Gen.Client.ApiResponse<Collection>> UpdateCollectionWithHttpInfoAsync(string address, string iMXSignature, string iMXTimestamp, UpdateCollectionRequest updateCollectionRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            // verify the required parameter 'address' is set
-            if (address == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'address' when calling CollectionsApi->UpdateCollection");
-            }
-
-            // verify the required parameter 'iMXSignature' is set
-            if (iMXSignature == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'iMXSignature' when calling CollectionsApi->UpdateCollection");
-            }
-
-            // verify the required parameter 'iMXTimestamp' is set
-            if (iMXTimestamp == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'iMXTimestamp' when calling CollectionsApi->UpdateCollection");
-            }
-
-            // verify the required parameter 'updateCollectionRequest' is set
-            if (updateCollectionRequest == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'updateCollectionRequest' when calling CollectionsApi->UpdateCollection");
-            }
-
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.PathParameters.Add("address", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(address)); // path parameter
-            localVarRequestOptions.HeaderParameters.Add("IMX-Signature", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(iMXSignature)); // header parameter
-            localVarRequestOptions.HeaderParameters.Add("IMX-Timestamp", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(iMXTimestamp)); // header parameter
-            localVarRequestOptions.Data = updateCollectionRequest;
-
-            localVarRequestOptions.Operation = "CollectionsApi.UpdateCollection";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PatchAsync<Collection>("/v1/collections/{address}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("UpdateCollection", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

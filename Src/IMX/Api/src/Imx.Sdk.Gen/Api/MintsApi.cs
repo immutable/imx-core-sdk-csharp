@@ -128,29 +128,6 @@ namespace Imx.Sdk.Gen.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ListMintsResponse</returns>
         ApiResponse<ListMintsResponse> ListMintsWithHttpInfo(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenName = default(string), string tokenAddress = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), int operationIndex = 0);
-        /// <summary>
-        /// Mint Tokens V2
-        /// </summary>
-        /// <remarks>
-        /// Mint tokens in a batch with fees
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="mintTokensRequestV2">details of tokens to mint</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>MintTokensResponse</returns>
-        MintTokensResponse MintTokens(List<MintRequest> mintTokensRequestV2, int operationIndex = 0);
-
-        /// <summary>
-        /// Mint Tokens V2
-        /// </summary>
-        /// <remarks>
-        /// Mint tokens in a batch with fees
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="mintTokensRequestV2">details of tokens to mint</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of MintTokensResponse</returns>
-        ApiResponse<MintTokensResponse> MintTokensWithHttpInfo(List<MintRequest> mintTokensRequestV2, int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
@@ -267,31 +244,6 @@ namespace Imx.Sdk.Gen.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ListMintsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<ListMintsResponse>> ListMintsWithHttpInfoAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenName = default(string), string tokenAddress = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-        /// <summary>
-        /// Mint Tokens V2
-        /// </summary>
-        /// <remarks>
-        /// Mint tokens in a batch with fees
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="mintTokensRequestV2">details of tokens to mint</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of MintTokensResponse</returns>
-        System.Threading.Tasks.Task<MintTokensResponse> MintTokensAsync(List<MintRequest> mintTokensRequestV2, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-
-        /// <summary>
-        /// Mint Tokens V2
-        /// </summary>
-        /// <remarks>
-        /// Mint tokens in a batch with fees
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="mintTokensRequestV2">details of tokens to mint</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (MintTokensResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<MintTokensResponse>> MintTokensWithHttpInfoAsync(List<MintRequest> mintTokensRequestV2, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -462,7 +414,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             localVarRequestOptions.PathParameters.Add("id", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(id)); // path parameter
 
@@ -616,7 +568,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             localVarRequestOptions.PathParameters.Add("token_address", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(tokenAddress)); // path parameter
             localVarRequestOptions.PathParameters.Add("token_id", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(tokenId)); // path parameter
@@ -796,7 +748,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             if (pageSize != null)
             {
@@ -1033,154 +985,6 @@ namespace Imx.Sdk.Gen.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("ListMints", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        /// Mint Tokens V2 Mint tokens in a batch with fees
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="mintTokensRequestV2">details of tokens to mint</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>MintTokensResponse</returns>
-        public MintTokensResponse MintTokens(List<MintRequest> mintTokensRequestV2, int operationIndex = 0)
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<MintTokensResponse> localVarResponse = MintTokensWithHttpInfo(mintTokensRequestV2);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Mint Tokens V2 Mint tokens in a batch with fees
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="mintTokensRequestV2">details of tokens to mint</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of MintTokensResponse</returns>
-        public Imx.Sdk.Gen.Client.ApiResponse<MintTokensResponse> MintTokensWithHttpInfo(List<MintRequest> mintTokensRequestV2, int operationIndex = 0)
-        {
-            // verify the required parameter 'mintTokensRequestV2' is set
-            if (mintTokensRequestV2 == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'mintTokensRequestV2' when calling MintsApi->MintTokens");
-            }
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
-
-            localVarRequestOptions.Data = mintTokensRequestV2;
-
-            localVarRequestOptions.Operation = "MintsApi.MintTokens";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = this.Client.Post<MintTokensResponse>("/v2/mints", localVarRequestOptions, this.Configuration);
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("MintTokens", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        /// Mint Tokens V2 Mint tokens in a batch with fees
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="mintTokensRequestV2">details of tokens to mint</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of MintTokensResponse</returns>
-        public async System.Threading.Tasks.Task<MintTokensResponse> MintTokensAsync(List<MintRequest> mintTokensRequestV2, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<MintTokensResponse> localVarResponse = await MintTokensWithHttpInfoAsync(mintTokensRequestV2, operationIndex, cancellationToken).ConfigureAwait(false);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Mint Tokens V2 Mint tokens in a batch with fees
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="mintTokensRequestV2">details of tokens to mint</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (MintTokensResponse)</returns>
-        public async System.Threading.Tasks.Task<Imx.Sdk.Gen.Client.ApiResponse<MintTokensResponse>> MintTokensWithHttpInfoAsync(List<MintRequest> mintTokensRequestV2, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            // verify the required parameter 'mintTokensRequestV2' is set
-            if (mintTokensRequestV2 == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'mintTokensRequestV2' when calling MintsApi->MintTokens");
-            }
-
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.Data = mintTokensRequestV2;
-
-            localVarRequestOptions.Operation = "MintsApi.MintTokens";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<MintTokensResponse>("/v2/mints", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("MintTokens", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

@@ -9,10 +9,10 @@
     <Authors>Immutable</Authors>
     <Company>Immutable</Company>
     <AssemblyTitle>Immutable C# Core SDK API Library</AssemblyTitle>
-    <Description>A library generated from a OpenAPI</Description>
+    <Description>A library generated from an ImmutableX OpenAPI spec</Description>
     <Copyright>No Copyright</Copyright>
     <RootNamespace>Imx.Sdk.Gen</RootNamespace>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Imx.Sdk.Gen.xml</DocumentationFile>
     <RepositoryUrl>https://github.com/immutable/imx-core-sdk-csharp.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -32,4 +32,5 @@
     <None Include="..\..\..\..\..\README.md" Pack="true" PackagePath="\"/>
     <None Include="..\..\..\..\..\LICENSE" Pack="true" PackagePath="\"/>
   </ItemGroup>
+
 </Project>

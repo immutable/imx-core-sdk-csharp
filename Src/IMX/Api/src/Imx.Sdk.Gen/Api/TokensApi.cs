@@ -322,7 +322,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             localVarRequestOptions.PathParameters.Add("address", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(address)); // path parameter
 
@@ -472,7 +472,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             if (pageSize != null)
             {

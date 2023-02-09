@@ -1,3 +1,9 @@
+## [0.1.1] - 2023-02-09
+
+### Removed
+
+Removed all non readonly methods from Generated code.
+
 ## [0.1.0] - 2023-01-31
 
 Initial release for Core SDK for C#.

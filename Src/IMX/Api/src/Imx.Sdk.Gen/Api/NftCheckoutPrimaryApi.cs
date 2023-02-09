@@ -28,29 +28,6 @@ namespace Imx.Sdk.Gen.Api
     {
         #region Synchronous Operations
         /// <summary>
-        /// Create NFT primary sale transaction
-        /// </summary>
-        /// <remarks>
-        /// Creates a transaction representing minting an NFT with a card payment.
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>NftprimarytransactionCreateResponse</returns>
-        NftprimarytransactionCreateResponse CreateNftPrimary(NftprimarytransactionCreateAPIRequest createAPIRequest, int operationIndex = 0);
-
-        /// <summary>
-        /// Create NFT primary sale transaction
-        /// </summary>
-        /// <remarks>
-        /// Creates a transaction representing minting an NFT with a card payment.
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of NftprimarytransactionCreateResponse</returns>
-        ApiResponse<NftprimarytransactionCreateResponse> CreateNftPrimaryWithHttpInfo(NftprimarytransactionCreateAPIRequest createAPIRequest, int operationIndex = 0);
-        /// <summary>
         /// Get currencies with limits
         /// </summary>
         /// <remarks>
@@ -141,29 +118,6 @@ namespace Imx.Sdk.Gen.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of NftprimarytransactionListTransactionsResponse</returns>
         ApiResponse<NftprimarytransactionListTransactionsResponse> GetNftPrimaryTransactionsWithHttpInfo(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string transactionId = default(string), string contractAddress = default(string), string sellerWalletAddress = default(string), string userWalletAddress = default(string), string status = default(string), string provider = default(string), string mintId = default(string), int operationIndex = 0);
-        /// <summary>
-        /// Executes NFT primary sales contract registration
-        /// </summary>
-        /// <remarks>
-        /// Registers a new contract for use in the minting with fiat card flow
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ContractCreateResponse</returns>
-        ContractCreateResponse RegisterNftPrimarySalesContract(ContractCreateAPIRequest createAPIRequest, int operationIndex = 0);
-
-        /// <summary>
-        /// Executes NFT primary sales contract registration
-        /// </summary>
-        /// <remarks>
-        /// Registers a new contract for use in the minting with fiat card flow
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of ContractCreateResponse</returns>
-        ApiResponse<ContractCreateResponse> RegisterNftPrimarySalesContractWithHttpInfo(ContractCreateAPIRequest createAPIRequest, int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
@@ -173,31 +127,6 @@ namespace Imx.Sdk.Gen.Api
     public interface INftCheckoutPrimaryApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
-        /// <summary>
-        /// Create NFT primary sale transaction
-        /// </summary>
-        /// <remarks>
-        /// Creates a transaction representing minting an NFT with a card payment.
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of NftprimarytransactionCreateResponse</returns>
-        System.Threading.Tasks.Task<NftprimarytransactionCreateResponse> CreateNftPrimaryAsync(NftprimarytransactionCreateAPIRequest createAPIRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-
-        /// <summary>
-        /// Create NFT primary sale transaction
-        /// </summary>
-        /// <remarks>
-        /// Creates a transaction representing minting an NFT with a card payment.
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (NftprimarytransactionCreateResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<NftprimarytransactionCreateResponse>> CreateNftPrimaryWithHttpInfoAsync(NftprimarytransactionCreateAPIRequest createAPIRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Get currencies with limits
         /// </summary>
@@ -295,31 +224,6 @@ namespace Imx.Sdk.Gen.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (NftprimarytransactionListTransactionsResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<NftprimarytransactionListTransactionsResponse>> GetNftPrimaryTransactionsWithHttpInfoAsync(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string transactionId = default(string), string contractAddress = default(string), string sellerWalletAddress = default(string), string userWalletAddress = default(string), string status = default(string), string provider = default(string), string mintId = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-        /// <summary>
-        /// Executes NFT primary sales contract registration
-        /// </summary>
-        /// <remarks>
-        /// Registers a new contract for use in the minting with fiat card flow
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ContractCreateResponse</returns>
-        System.Threading.Tasks.Task<ContractCreateResponse> RegisterNftPrimarySalesContractAsync(ContractCreateAPIRequest createAPIRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-
-        /// <summary>
-        /// Executes NFT primary sales contract registration
-        /// </summary>
-        /// <remarks>
-        /// Registers a new contract for use in the minting with fiat card flow
-        /// </remarks>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (ContractCreateResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ContractCreateResponse>> RegisterNftPrimarySalesContractWithHttpInfoAsync(ContractCreateAPIRequest createAPIRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -441,154 +345,6 @@ namespace Imx.Sdk.Gen.Api
         }
 
         /// <summary>
-        /// Create NFT primary sale transaction Creates a transaction representing minting an NFT with a card payment.
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>NftprimarytransactionCreateResponse</returns>
-        public NftprimarytransactionCreateResponse CreateNftPrimary(NftprimarytransactionCreateAPIRequest createAPIRequest, int operationIndex = 0)
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<NftprimarytransactionCreateResponse> localVarResponse = CreateNftPrimaryWithHttpInfo(createAPIRequest);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Create NFT primary sale transaction Creates a transaction representing minting an NFT with a card payment.
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of NftprimarytransactionCreateResponse</returns>
-        public Imx.Sdk.Gen.Client.ApiResponse<NftprimarytransactionCreateResponse> CreateNftPrimaryWithHttpInfo(NftprimarytransactionCreateAPIRequest createAPIRequest, int operationIndex = 0)
-        {
-            // verify the required parameter 'createAPIRequest' is set
-            if (createAPIRequest == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'createAPIRequest' when calling NftCheckoutPrimaryApi->CreateNftPrimary");
-            }
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
-
-            localVarRequestOptions.Data = createAPIRequest;
-
-            localVarRequestOptions.Operation = "NftCheckoutPrimaryApi.CreateNftPrimary";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = this.Client.Post<NftprimarytransactionCreateResponse>("/v2/nft/primary", localVarRequestOptions, this.Configuration);
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("CreateNftPrimary", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        /// Create NFT primary sale transaction Creates a transaction representing minting an NFT with a card payment.
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of NftprimarytransactionCreateResponse</returns>
-        public async System.Threading.Tasks.Task<NftprimarytransactionCreateResponse> CreateNftPrimaryAsync(NftprimarytransactionCreateAPIRequest createAPIRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<NftprimarytransactionCreateResponse> localVarResponse = await CreateNftPrimaryWithHttpInfoAsync(createAPIRequest, operationIndex, cancellationToken).ConfigureAwait(false);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Create NFT primary sale transaction Creates a transaction representing minting an NFT with a card payment.
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (NftprimarytransactionCreateResponse)</returns>
-        public async System.Threading.Tasks.Task<Imx.Sdk.Gen.Client.ApiResponse<NftprimarytransactionCreateResponse>> CreateNftPrimaryWithHttpInfoAsync(NftprimarytransactionCreateAPIRequest createAPIRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            // verify the required parameter 'createAPIRequest' is set
-            if (createAPIRequest == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'createAPIRequest' when calling NftCheckoutPrimaryApi->CreateNftPrimary");
-            }
-
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.Data = createAPIRequest;
-
-            localVarRequestOptions.Operation = "NftCheckoutPrimaryApi.CreateNftPrimary";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<NftprimarytransactionCreateResponse>("/v2/nft/primary", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("CreateNftPrimary", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
         /// Get currencies with limits Returns a list of supported currencies and their limits
         /// </summary>
         /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
@@ -634,7 +390,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             if (provider != null)
             {
@@ -790,7 +546,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             localVarRequestOptions.PathParameters.Add("transaction_id", Imx.Sdk.Gen.Client.ClientUtils.ParameterToString(transactionId)); // path parameter
 
@@ -950,7 +706,7 @@ namespace Imx.Sdk.Gen.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
+            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.1");
 
             if (pageSize != null)
             {
@@ -1137,154 +893,6 @@ namespace Imx.Sdk.Gen.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("GetNftPrimaryTransactions", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        /// Executes NFT primary sales contract registration Registers a new contract for use in the minting with fiat card flow
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ContractCreateResponse</returns>
-        public ContractCreateResponse RegisterNftPrimarySalesContract(ContractCreateAPIRequest createAPIRequest, int operationIndex = 0)
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<ContractCreateResponse> localVarResponse = RegisterNftPrimarySalesContractWithHttpInfo(createAPIRequest);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Executes NFT primary sales contract registration Registers a new contract for use in the minting with fiat card flow
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of ContractCreateResponse</returns>
-        public Imx.Sdk.Gen.Client.ApiResponse<ContractCreateResponse> RegisterNftPrimarySalesContractWithHttpInfo(ContractCreateAPIRequest createAPIRequest, int operationIndex = 0)
-        {
-            // verify the required parameter 'createAPIRequest' is set
-            if (createAPIRequest == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'createAPIRequest' when calling NftCheckoutPrimaryApi->RegisterNftPrimarySalesContract");
-            }
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.HeaderParameters.Add("x-sdk-version", "imx-core-sdk-csharp-0.1.0");
-
-            localVarRequestOptions.Data = createAPIRequest;
-
-            localVarRequestOptions.Operation = "NftCheckoutPrimaryApi.RegisterNftPrimarySalesContract";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = this.Client.Post<ContractCreateResponse>("/v2/nft/primary/register", localVarRequestOptions, this.Configuration);
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("RegisterNftPrimarySalesContract", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        /// Executes NFT primary sales contract registration Registers a new contract for use in the minting with fiat card flow
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ContractCreateResponse</returns>
-        public async System.Threading.Tasks.Task<ContractCreateResponse> RegisterNftPrimarySalesContractAsync(ContractCreateAPIRequest createAPIRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            Imx.Sdk.Gen.Client.ApiResponse<ContractCreateResponse> localVarResponse = await RegisterNftPrimarySalesContractWithHttpInfoAsync(createAPIRequest, operationIndex, cancellationToken).ConfigureAwait(false);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Executes NFT primary sales contract registration Registers a new contract for use in the minting with fiat card flow
-        /// </summary>
-        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="createAPIRequest">req</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (ContractCreateResponse)</returns>
-        public async System.Threading.Tasks.Task<Imx.Sdk.Gen.Client.ApiResponse<ContractCreateResponse>> RegisterNftPrimarySalesContractWithHttpInfoAsync(ContractCreateAPIRequest createAPIRequest, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            // verify the required parameter 'createAPIRequest' is set
-            if (createAPIRequest == null)
-            {
-                throw new Imx.Sdk.Gen.Client.ApiException(400, "Missing required parameter 'createAPIRequest' when calling NftCheckoutPrimaryApi->RegisterNftPrimarySalesContract");
-            }
-
-
-            Imx.Sdk.Gen.Client.RequestOptions localVarRequestOptions = new Imx.Sdk.Gen.Client.RequestOptions();
-
-            string[] _contentTypes = new string[] {
-                "application/json"
-            };
-
-            // to determine the Accept header
-            string[] _accepts = new string[] {
-                "application/json"
-            };
-
-            var localVarContentType = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
-
-            var localVarAccept = Imx.Sdk.Gen.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
-
-            localVarRequestOptions.Data = createAPIRequest;
-
-            localVarRequestOptions.Operation = "NftCheckoutPrimaryApi.RegisterNftPrimarySalesContract";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
-
-            // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<ContractCreateResponse>("/v2/nft/primary/register", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("RegisterNftPrimarySalesContract", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

@@ -5,7 +5,6 @@ All URIs are relative to *https://api.sandbox.x.immutable.com*
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
 | [**GetDeposit**](DepositsApi.md#getdeposit) | **GET** /v1/deposits/{id} | Get details of a deposit with the given ID |
-| [**GetSignableDeposit**](DepositsApi.md#getsignabledeposit) | **POST** /v1/signable-deposit-details | Gets details of a signable deposit |
 | [**ListDeposits**](DepositsApi.md#listdeposits) | **GET** /v1/deposits | Get a list of deposits |
 
 <a name="getdeposit"></a>
@@ -89,97 +88,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getsignabledeposit"></a>
-# **GetSignableDeposit**
-> GetSignableDepositResponse GetSignableDeposit (GetSignableDepositRequest getSignableDepositRequest)
-
-Gets details of a signable deposit
-
-Gets details of a signable deposit
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Imx.Sdk.Gen.Api;
-using Imx.Sdk.Gen.Client;
-using Imx.Sdk.Gen.Model;
-
-namespace Example
-{
-    public class GetSignableDepositExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.sandbox.x.immutable.com";
-            var apiInstance = new DepositsApi(config);
-            var getSignableDepositRequest = new GetSignableDepositRequest(); // GetSignableDepositRequest | Get details of signable deposit
-
-            try
-            {
-                // Gets details of a signable deposit
-                GetSignableDepositResponse result = apiInstance.GetSignableDeposit(getSignableDepositRequest);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling DepositsApi.GetSignableDeposit: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-#### Using the GetSignableDepositWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Gets details of a signable deposit
-    ApiResponse<GetSignableDepositResponse> response = apiInstance.GetSignableDepositWithHttpInfo(getSignableDepositRequest);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling DepositsApi.GetSignableDepositWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
-### Parameters
-
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **getSignableDepositRequest** | [**GetSignableDepositRequest**](GetSignableDepositRequest.md) | Get details of signable deposit |  |
-
-### Return type
-
-[**GetSignableDepositResponse**](GetSignableDepositResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
  - **Accept**: application/json
 
 

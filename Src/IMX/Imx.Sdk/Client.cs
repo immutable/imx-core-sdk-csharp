@@ -50,14 +50,11 @@ namespace Imx.Sdk
         public readonly IBalancesApi BalancesApi;
         public readonly ICollectionsApi CollectionsApi;
         public readonly IDepositsApi DepositsApi;
-        public readonly IEncodingApi EncodingApi;
         public readonly IExchangesApi ExchangesApi;
         public readonly IMetadataApi MetadataApi;
-        public readonly IMetadataRefreshesApi MetadataRefreshesApi;
         public readonly IMintsApi MintsApi;
         public readonly INftCheckoutPrimaryApi NftCheckoutPrimaryApi;
         public readonly IOrdersApi OrdersApi;
-        public readonly IProjectsApi ProjectsApi;
         public readonly ITokensApi TokensApi;
         public readonly ITradesApi TradesApi;
         public readonly ITransfersApi TransfersApi;
@@ -76,15 +73,12 @@ namespace Imx.Sdk
             this.BalancesApi = new BalancesApi(config);
             this.CollectionsApi = new CollectionsApi(config);
             this.DepositsApi = new DepositsApi(config);
-            this.EncodingApi = new EncodingApi(config);
             this.ExchangesApi = new ExchangesApi(config);
             this.MetadataApi = new MetadataApi(config);
-            this.MetadataRefreshesApi = new MetadataRefreshesApi(config);
             this.MintsApi = new MintsApi(config);
             this.NftCheckoutPrimaryApi = new NftCheckoutPrimaryApi(config);
             this.OrdersApi = new OrdersApi(config);
             this.TokensApi = new TokensApi(config);
-            this.ProjectsApi = new ProjectsApi(config);
             this.TradesApi = new TradesApi(config);
             this.TransfersApi = new TransfersApi(config);
             this.UsersApi = new UsersApi(config);
@@ -230,6 +224,16 @@ namespace Imx.Sdk
         public async System.Threading.Tasks.Task<Mint> GetMintAsync(string id, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await MintsApi.GetMintAsync(id, 0, cancellationToken).ConfigureAwait(false);
+        }
+
+        public MintableTokenDetails GetMintableTokenDetailsByClientTokenId(string tokenAddress, string tokenId)
+        {
+            return MintsApi.GetMintableTokenDetailsByClientTokenId(tokenAddress, tokenId);
+        }
+
+        public async System.Threading.Tasks.Task<MintableTokenDetails> GetMintableTokenDetailsByClientTokenIdAsync(string tokenAddress, string tokenId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return await MintsApi.GetMintableTokenDetailsByClientTokenIdAsync(tokenAddress, tokenId, 0, cancellationToken);
         }
 
         public ListMintsResponse ListMints(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenName = default(string), string tokenAddress = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string))
