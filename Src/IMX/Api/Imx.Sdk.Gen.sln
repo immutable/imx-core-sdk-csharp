@@ -2,9 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imx.Sdk.Gen", "src\Imx.Sdk.Gen\Imx.Sdk.Gen.csproj", "{BE7DDE2F-D6AB-4ECA-8EFC-B4E0DBBFACF1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imx.Sdk.Gen.Test", "src\Imx.Sdk.Gen.Test\Imx.Sdk.Gen.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imx.Sdk.Gen", "src\Imx.Sdk.Gen\Imx.Sdk.Gen.csproj", "{4438D923-0453-4351-9B89-C9A1035D09EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,10 +10,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BE7DDE2F-D6AB-4ECA-8EFC-B4E0DBBFACF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE7DDE2F-D6AB-4ECA-8EFC-B4E0DBBFACF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE7DDE2F-D6AB-4ECA-8EFC-B4E0DBBFACF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE7DDE2F-D6AB-4ECA-8EFC-B4E0DBBFACF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4438D923-0453-4351-9B89-C9A1035D09EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4438D923-0453-4351-9B89-C9A1035D09EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4438D923-0453-4351-9B89-C9A1035D09EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4438D923-0453-4351-9B89-C9A1035D09EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
