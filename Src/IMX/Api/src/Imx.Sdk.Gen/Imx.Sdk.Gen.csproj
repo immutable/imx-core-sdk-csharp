@@ -9,7 +9,7 @@
     <Authors>Immutable</Authors>
     <Company>Immutable</Company>
     <AssemblyTitle>Immutable C# Core SDK API Library</AssemblyTitle>
-    <Description>A library generated from a OpenAPI</Description>
+    <Description>A library generated from an ImmutableX OpenAPI spec</Description>
     <Copyright>No Copyright</Copyright>
     <RootNamespace>Imx.Sdk.Gen</RootNamespace>
     <Version>0.1.1</Version>
