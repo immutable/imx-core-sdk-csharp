@@ -232,6 +232,16 @@ namespace Imx.Sdk
             return await MintsApi.GetMintAsync(id, 0, cancellationToken).ConfigureAwait(false);
         }
 
+        MintableTokenDetails GetMintableTokenDetailsByClientTokenId(string tokenAddress, string tokenId)
+        {
+            return MintsApi.GetMintableTokenDetailsByClientTokenId(tokenAddress, tokenId);
+        }
+
+        System.Threading.Tasks.Task<MintableTokenDetails> GetMintableTokenDetailsByClientTokenIdAsync(string tokenAddress, string tokenId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            return MintsApi.GetMintableTokenDetailsByClientTokenIdAsync(tokenAddress, tokenId, 0, cancellationToken);
+        }
+
         public ListMintsResponse ListMints(int? pageSize = default(int?), string cursor = default(string), string orderBy = default(string), string direction = default(string), string user = default(string), string status = default(string), string minTimestamp = default(string), string maxTimestamp = default(string), string tokenType = default(string), string tokenId = default(string), string assetId = default(string), string tokenName = default(string), string tokenAddress = default(string), string minQuantity = default(string), string maxQuantity = default(string), string metadata = default(string))
         {
             return MintsApi.ListMints(pageSize, cursor, orderBy, direction, user, status, minTimestamp, maxTimestamp, tokenType, tokenId, assetId, tokenName, tokenAddress, minQuantity, maxQuantity, metadata);

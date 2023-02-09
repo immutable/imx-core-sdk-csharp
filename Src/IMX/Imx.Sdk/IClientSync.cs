@@ -225,6 +225,19 @@ namespace Imx.Sdk
         Mint GetMint(string id);
 
         /// <summary>
+        /// Get details of a mintable token with the given token address and token ID
+        /// </summary>
+        /// <remarks>
+        /// Get details of a mintable token with the given token address and token ID
+        /// </remarks>
+        /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="tokenAddress">Address of the ERC721 contract</param>
+        /// <param name="tokenId">ERC721 token ID</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>MintableTokenDetails</returns>
+        MintableTokenDetails GetMintableTokenDetailsByClientTokenId(string tokenAddress, string tokenId, int operationIndex = 0);
+
+        /// <summary>
         /// Get a list of mints
         /// </summary>
         /// <remarks>
