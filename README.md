@@ -28,7 +28,9 @@ Currently, this SDK supports interactions with our application-specific rollup b
 > * Orders: Get & List
 > * Users: Get
 > * Tokens: Get & List
-> The functionality roadmap is as follows:
+> 
+> ***Implementation roadmap:***
+> ![image](https://user-images.githubusercontent.com/96668470/217699376-86d904c2-3355-4e9a-bb34-feae034e8494.png)
 
 ## Documentation
 
