@@ -54,7 +54,7 @@ namespace Imx.Sdk
         /// </remarks>
         /// <exception cref="Imx.Sdk.Gen.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="owner">Address of the owner/user</param>
-        /// <param name="address">Token address</param>
+        /// <param name="address">Token address or 'eth'</param>
         /// <returns>Balance</returns>
         Balance GetBalance(string owner, string address);
 
