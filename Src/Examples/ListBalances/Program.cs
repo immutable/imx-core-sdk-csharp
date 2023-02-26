@@ -5,7 +5,7 @@ using Imx.Sdk;
 // Address of the owner/user
 var ownerToken = "0x2d0ad946788938B9044ed72b1C464e1e9bb9d401"; // Swap this out for your own owner token address
 
-// Token address or 'eth'
+// Token address of 'eth'
 var ethTokenAddress = "eth";
 
 // Token address of Gods Unchained
