@@ -29,7 +29,7 @@ catch (ApiException e)
     Console.WriteLine(e.StackTrace);
 }
 
-// Get Gods Unchained balance for owner token example
+// Get ERC721 token balance for Gods Unchained
 try
 {
     var balance = client.GetBalance(ownerToken, guTokenAddress);
