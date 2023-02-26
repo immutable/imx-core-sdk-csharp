@@ -60,7 +60,7 @@ namespace Imx.Sdk
         /// <param name="address">Token address or 'eth'</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Balance</returns>
-        System.Threading.Tasks.Task<Balance> GetBalanceAsync(string owner, string address, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Balance> GetBalanceAsync(string owner, string address = "eth", System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Get a list of balances for given user

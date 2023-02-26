@@ -56,7 +56,7 @@ namespace Imx.Sdk
         /// <param name="owner">Address of the owner/user</param>
         /// <param name="address">Token address or 'eth'</param>
         /// <returns>Balance</returns>
-        Balance GetBalance(string owner, string address);
+        Balance GetBalance(string owner, string address = "eth");
 
         /// <summary>
         /// Get a list of balances for given user
