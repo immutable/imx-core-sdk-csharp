@@ -1,3 +1,10 @@
+## [0.1.2] - 2023-02-27
+
+### Added
+ 
+- Added XML summaries for `Client.cs` methods
+- Updated `GetBalance` method to get Eth balance as default parameter.
+
 ## [0.1.1] - 2023-02-09
 
 ### Removed
