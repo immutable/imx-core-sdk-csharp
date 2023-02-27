@@ -110,12 +110,12 @@ namespace Imx.Sdk
 
         #region Balances
 
-        public Balance GetBalance(string owner, string address)
+        public Balance GetBalance(string owner, string address = "eth")
         {
             return BalancesApi.GetBalance(owner, address);
         }
 
-        public async System.Threading.Tasks.Task<Balance> GetBalanceAsync(string owner, string address, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Balance> GetBalanceAsync(string owner, string address = "eth", System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             return await BalancesApi.GetBalanceAsync(owner, address, 0, cancellationToken).ConfigureAwait(false);
         }
