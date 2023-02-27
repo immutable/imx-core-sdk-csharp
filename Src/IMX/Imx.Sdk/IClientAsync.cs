@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Imx.Sdk
 {
-    interface IClientAsync
+    public interface IClientAsync
     {
         #region Assets
 
