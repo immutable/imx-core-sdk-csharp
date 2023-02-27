@@ -42,6 +42,8 @@ See the [Developer homepage](https://docs.x.immutable.com/) for general informat
 
 The following sections provide information on how to set up and use the most common functions of the C# SDK. For any other questions, please reach out to the team (see [Getting Help](#getting-help)).
 
+## Examples
+* **Sample code** - see the [examples](https://github.com/immutable/imx-core-sdk-csharp/tree/main/Src/Examples) folder for sample code for key SDK functionality.
 
 ## Installation
 
