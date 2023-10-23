@@ -20,7 +20,7 @@ namespace Imx.Sdk
         public static Environment Sandbox = new Environment()
         {
             BaseApiPath = "https://api.sandbox.x.immutable.com",
-            EthereumRpc = "https://eth-sepolia.alchemyapi.io/v2/",
+            EthereumRpc = "https://eth-sepolia.g.alchemy.com/v2/",
             RegistrationContractAddress = "0xDbA6129C02E69405622fAdc3d5A7f8d23eac3b97",
             CoreContractAddress = "0x2d5C349fD8464DA06a3f90b4B0E9195F3d1b7F98",
             ChainId = 11155111, // Sepolia
