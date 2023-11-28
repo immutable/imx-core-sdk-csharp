@@ -6,6 +6,10 @@
   </p>
 </div>
 
+# 🚨 This library is no longer maintained 🚨
+
+If you're building apps with Immutable, please use [Immutable's Unified SDK](https://github.com/immutable/ts-immutable-sdk)
+
 # Immutable Core SDK in C#
 
 The Immutable Core SDK in C# provides convenient access to the ImmutableX API and Ethereum smart contracts for applications written on the ImmutableX platform.
