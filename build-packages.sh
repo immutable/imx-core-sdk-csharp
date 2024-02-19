@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-VERSION_STR="0.1.2"
+VERSION_STR="0.3.0"
 
 SRC_DIR="./Src/IMX"
 OUT_DIR="NugetPackages"

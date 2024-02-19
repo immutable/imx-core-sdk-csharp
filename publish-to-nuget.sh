@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-VERSION_STR="0.1.2"
+VERSION_STR="0.3.0"
 OUT_DIR="NugetPackages"
 API_KEY="" # Get API Key from your Nuget Account
 cd ${OUT_DIR}

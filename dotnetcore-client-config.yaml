@@ -6,7 +6,7 @@ gitRepoId: imx-core-sdk-csharp
 enablePostProcessFile: true
 additionalProperties:
   packageName: Imx.Sdk.Gen
-  packageVersion: 0.1.1   # Todo: Auto generate this version string from the release git tags.
+  packageVersion: 0.3.0 # Todo: Auto generate this version string from the release git tags.
   netCoreProjectFile: true
   Default: true
   targetFramework: netstandard2.1;net6.0
